@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-:root{
-    --primary-color:#CBD300;
-    --grey-color:#333;
-    --color-light:#fff;
-    --color-dark: #1d2026;
-    --color-light-grey:#f4f4f4;
-}
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,13 +7,6 @@
 
 }
 
-body{
-
-    font-family: "Lato", sans-serif;
-    color:var(--grey-color);
-    line-height: 1.6;
-
-}
 
 
 h1, h2, h3{
@@ -37,9 +22,6 @@ p{
 img{
     width: 100%;
 }
-
-
-
 
 /* About */
 

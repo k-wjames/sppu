@@ -9,6 +9,11 @@
  --icons-bg:#eee;
  --box-shadow:0 0.5rem rgba(0,0,0,0.1);
 
+    --grey-color:#333;
+    --color-light:#fff;
+    --color-dark: #1d2026;
+    --color-light-grey:#f4f4f4;
+
 }
 
 *{
@@ -258,14 +263,6 @@ header .icons #menubar{
 .swiper-pagination-bullet-active{
     background: var(--primary);
 }
-
-.footer{
-    height: 30vh;
-    width: 100%;
-    background: var(--primary);
-    color: var(--white);
-}
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -296,8 +293,9 @@ header .icons #menubar{
 }
 
 .footer{
+    width: 100%;
+    background: var(--primary);
     color: var(--white);
-    font-size: 2rem;
 }
 
 .footer a{
@@ -306,8 +304,9 @@ header .icons #menubar{
     font-size: 1.5rem;
 
 }
-
-
+.footer p, h1{
+    font-size: 2rem;
+}
 
 /* media querries*/
 
