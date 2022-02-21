@@ -304,8 +304,13 @@ header .icons #menubar{
     font-size: 1.5rem;
 
 }
-.footer p, h1{
+.footer h1{
     font-size: 2rem;
+    text-transform: none;
+}
+
+.footer p{
+    font-size: 1.5rem;
     text-transform: none;
 }
 
