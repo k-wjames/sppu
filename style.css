@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --primary-color:#CBD300;
+    --grey-color:#333;
+    --color-light:#fff;
+    --color-dark: #1d2026;
+    --color-light-grey:#f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+
+    font-family: "Lato", sans-serif;
+    color:var(--grey-color);
+    line-height: 1.6;
+
+}
+
+
+h1, h2, h3{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+
+/* About */
+
+.about{
+    padding-top: 100px;
+}
+.about h2{
+    text-align: center;
+}
+
+.about .paragraph{
+    text-align: center;
+    tab-size: 25px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.team{
+    color: white;
+    background-color: var(--color-light-grey);
+}
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--grey-color);
+    
+}
+.heading span{
+    color: var(--primary-color);
+}
+
+.profile .profile-img{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profile-img{
+    filter: grayscale(0);
+}
+.user-name{
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+.designation{
+    font-size: 1.8rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+
+/*Tablets Media query*/
+
+@media(max-width:768px){
+
+    .grid,
+    .team .grid,
+    .footer .grid{
+        
+        grid-template-columns: 1fr;
+    }
+
+
+}

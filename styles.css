@@ -273,6 +273,45 @@ header .icons #menubar{
     background: var(--primary);
     color: var(--white);
 }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.text-center{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+
+
+.footer a{
+    color: var(--color-light);
+    font-size: 0.9rem;
+}
+
+
+
 /* media querries*/
 
 @media(max-width:991px){
