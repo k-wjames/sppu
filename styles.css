@@ -38,14 +38,6 @@ section{
 section:nth-child(even){
     background: var(--icons-bg);
 }
-
-/* images */
-
-/* img {
-    height: auto;
-    width: 100%;
-} */
-
 .sub-heading{
     text-align:center;
     color: var(--primary);
@@ -308,6 +300,7 @@ header .icons #menubar{
 .footer a{
     color: var(--color-light);
     font-size: 0.9rem;
+    color: var(--white);
 }
 
 
