@@ -7,6 +7,7 @@ img{
 }
 .team{
     color: white;
+    width: 100%;
     background-color: var(--color-light-grey);
 }
 .heading{
@@ -27,10 +28,10 @@ img{
 }
 .user-name{
     margin-top: 30px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 .designation{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-transform: none;
 }
 
