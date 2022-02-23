@@ -24,8 +24,15 @@
     align-items: center;
     height: 100%;
 }
+.grid-2{
+    grid-template-columns: repeat(2, 1fr);
+}
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-5{
+    grid-template-columns: repeat(5, 1fr);
 }
 /* Margins*/
 

@@ -232,12 +232,12 @@ header .icons #menubar{
 
 .about .about-slider .slide .content h3{
     color: var(--dark);
-    font-size: 4rem;
+    font-size: 3.1rem;
 }
 
 .about .about-slider .slide .content p{
     color: var(--light);
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 5rem 0;
     line-height: 1.5;
     color: var(--dark);
@@ -254,10 +254,6 @@ header .icons #menubar{
     overflow: auto;
     padding: 0 20px;
 }
-
-.text-center{
-    text-align: center;
-}
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -266,17 +262,15 @@ header .icons #menubar{
     align-items: center;
     height: 100%;
 }
-
-.grid-5{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.grid-2{
+    grid-template-columns: repeat(2, 1fr);
 }
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-5{
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .flex{
@@ -284,6 +278,9 @@ header .icons #menubar{
     justify-content: center;
     align-items: center;
     height:100%;
+}
+.documents{
+
 }
 
 .footer{

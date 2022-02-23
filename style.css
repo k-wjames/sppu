@@ -8,7 +8,6 @@ img{
 .team{
     color: white;
     width: 100%;
-    background-color: var(--color-light-grey);
 }
 .heading{
     font-size: 2rem;
@@ -19,8 +18,8 @@ img{
 }
 
 .profile .profile-img{
-    height: 230px;
-    width: 230px;
+    height: 150px;
+    width: 1500px;
     border-radius: 50%;
     filter: grayscale(100%);
     cursor: pointer;
