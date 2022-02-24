@@ -222,8 +222,11 @@ header .icons #menubar{
 }
 
 .about .about-slider .slide .image img{
-    width: 100%;
-    padding: 50px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .about .about-slider .slide .content span{
