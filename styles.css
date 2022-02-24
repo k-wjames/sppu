@@ -209,11 +209,12 @@ header .icons #menubar{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-top: 9rem;
+    padding-top: 2rem;
 }
 
 .about .about-slider .slide .content{
     flex: 1 1 45rem;
+    align-items: center;
 }
 
 .about .about-slider .slide .image{
@@ -222,6 +223,7 @@ header .icons #menubar{
 
 .about .about-slider .slide .image img{
     width: 100%;
+    padding: 50px;
 }
 
 .about .about-slider .slide .content span{
@@ -237,7 +239,7 @@ header .icons #menubar{
 .about .about-slider .slide .content p{
     color: var(--light);
     font-size: 2rem;
-    padding: 5rem 0;
+    padding: 1rem 0;
     line-height: 1.5;
     color: var(--dark);
     text-transform: none;
