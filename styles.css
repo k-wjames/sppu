@@ -285,6 +285,40 @@ header .icons #menubar{
     height:100%;
 }
 
+.documents .container .grid-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.qms{
+    padding-left: 40px;
+    padding-right: 80px;
+}
+.qms h3{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.qms ul li a{
+    font-size: 1.8rem;
+}
+
+.other{
+    padding-left: 80px;
+    padding-right: 40px;
+}
+.other h3{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.other ul li a{
+    font-size: 1.8rem;
+}
+
+
 .footer{
     width: 100%;
     background: var(--primary);
