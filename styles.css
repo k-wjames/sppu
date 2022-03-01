@@ -236,6 +236,11 @@ button{
     pointer-events: none;
 }
 
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
 .modal{
     background-color: var(--color-light);
     width: 600px;
