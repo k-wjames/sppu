@@ -61,3 +61,16 @@ var swiper = new Swiper(".about-slider", {
   closeMuli.addEventListener('click',()=>{
     modal_containerMuli.classList.remove('show');
   });
+
+  const openFridah=document.getElementById('open-fridah');
+  const modal_containerFridah=document.getElementById('modal-container-fridah');
+  const closeMFridah=document.getElementById('close-fridah');
+
+  openFridah.addEventListener('click',()=>{
+    modal_containerFridah.classList.add('show');
+  });
+
+  closeFridah.addEventListener('click',()=>{
+    modal_containerFridah.classList.remove('show');
+  });
+  
