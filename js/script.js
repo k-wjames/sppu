@@ -35,3 +35,29 @@ var swiper = new Swiper(".about-slider", {
   close.addEventListener('click',()=>{
     modal_container.classList.remove('show');
   });
+
+
+  const openPauline=document.getElementById('open-pauline');
+  const modal_containerPauline=document.getElementById('modal-container-pauline');
+  const closePauline=document.getElementById('close-pauline');
+
+  openPauline.addEventListener('click',()=>{
+    modal_containerPauline.classList.add('show');
+  });
+
+  closePauline.addEventListener('click',()=>{
+    modal_containerPauline.classList.remove('show');
+  });
+
+
+  const openMuli=document.getElementById('open-muli');
+  const modal_containerMuli=document.getElementById('modal-container-muli');
+  const closeMuli=document.getElementById('close-muli');
+
+  openMuli.addEventListener('click',()=>{
+    modal_containerMuli.classList.add('show');
+  });
+
+  closeMuli.addEventListener('click',()=>{
+    modal_containerMuli.classList.remove('show');
+  });
