@@ -76,7 +76,7 @@ var swiper = new Swiper(".about-slider", {
 
   const openKariuki=document.getElementById('open-kariuki');
   const modal_containerKariuki=document.getElementById('modal-container-kariuki');
-  const closeMKariuki=document.getElementById('close-kariuki');
+  const closeKariuki=document.getElementById('close-kariuki');
 
   openKariuki.addEventListener('click',()=>{
     modal_containerKariuki.classList.add('show');
