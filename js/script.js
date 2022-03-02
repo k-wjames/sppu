@@ -64,7 +64,7 @@ var swiper = new Swiper(".about-slider", {
 
   const openFridah=document.getElementById('open-fridah');
   const modal_containerFridah=document.getElementById('modal-container-fridah');
-  const closeMFridah=document.getElementById('close-fridah');
+  const closeFridah=document.getElementById('close-fridah');
 
   openFridah.addEventListener('click',()=>{
     modal_containerFridah.classList.add('show');
@@ -73,4 +73,17 @@ var swiper = new Swiper(".about-slider", {
   closeFridah.addEventListener('click',()=>{
     modal_containerFridah.classList.remove('show');
   });
+
+  const openKariuki=document.getElementById('open-kariuki');
+  const modal_containerKariuki=document.getElementById('modal-container-kariuki');
+  const closeMKariuki=document.getElementById('close-kariuki');
+
+  openKariuki.addEventListener('click',()=>{
+    modal_containerKariuki.classList.add('show');
+  });
+
+  closeKariuki.addEventListener('click',()=>{
+    modal_containerKariuki.classList.remove('show');
+  });
+  
   
