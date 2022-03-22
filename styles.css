@@ -399,14 +399,14 @@ button{
 
 @media(max-width:991px){
     html{
-        font-size: 55%;
+        font-size: 45%;
     }
     header{
         padding: 1rem 2rem;
     }
 
     header .logo{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .about .about-slider .slide .image img{
@@ -446,15 +446,13 @@ button{
        background: var(--icons-bg);
    }
 
-   .home .home-slider .slide .content h3{
-    font-size: 2.5rem;
-}
+
 
 }
 
 @media(max-width:991px){
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
     header{
         padding: 1rem 2rem ;
