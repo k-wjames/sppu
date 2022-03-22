@@ -255,6 +255,58 @@ button{
     box-shadow: 0 2px 4px rgba(0, 0 , 0, .2);
     position: relative;
 }
+/* Gallery section*/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.gallery .heading{
+    width: 90%;
+    padding-bottom: 50px;
+
+}
+
+.gallery .heading h3{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.gallery .heading h3 span{
+    color: var(--primary);
+}
+
+.gallery .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.gallery .box .dream{
+
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.gallery .btn{
+    margin: 40px 0 70px 0;
+    background: var(--primary);
+    color: var(--color-light-grey);
+    padding: 5px 40px;
+}
 
 /* Styking the close div*/
 .close{
