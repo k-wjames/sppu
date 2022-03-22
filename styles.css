@@ -168,6 +168,8 @@ header .icons #menubar{
 #strategy {
     color: var(--color-light-grey);
     font-size: 3rem;
+    background: var(--primary);
+    padding: .5rem 1.5rem;
 }
 
 
