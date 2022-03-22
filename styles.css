@@ -141,7 +141,7 @@ header .icons #menubar{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("img/team.JPG");
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
