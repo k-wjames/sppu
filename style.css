@@ -4,6 +4,7 @@ p{
 
 img{
     width: 100%;
+
 }
 .heading{
     font-size: 2rem;
@@ -49,5 +50,5 @@ img{
         grid-template-columns: 1fr;
     }
 
-
+    
 }

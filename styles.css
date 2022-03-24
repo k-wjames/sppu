@@ -533,6 +533,18 @@ button{
    }
 
 
+   .introduction{
+    width: 100%;
+    height: auto;
+}
+
+.hero-image{
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
 
 }
 
