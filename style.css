@@ -42,6 +42,8 @@ img{
 
     .grid,
     .team .grid,
+    .pc .grid,
+    .documents .grid,
     .footer .grid{
         
         grid-template-columns: 1fr;

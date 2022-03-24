@@ -39,9 +39,9 @@ section{
     padding: 2rem 9%;
 }
 
-section:nth-child(even){
+/*section:nth-child(even){
     background: var(--icons-bg);
-}
+}.*/
 .sub-heading{
     text-align:center;
     color: var(--primary);
@@ -141,12 +141,16 @@ header .icons #menubar{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("img/team.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
     
+}
+
+#home .hero-image{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -170,11 +174,47 @@ header .icons #menubar{
     font-size: 3rem;
     background: var(--primary);
     padding: .5rem 1.5rem;
+    z-index: 100;
+}
+
+.pc{
+    background: var(--icons-bg);
 }
 
 
-/* department */
+.container .description{
+    width: 100%;
+    height: auto;
+}
 
+.container .description p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.container .description h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--dark);
+}
+.container .principle{
+    width: 100%;
+    height: auto;
+}
+.container .principle p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.container .principle h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--dark);
+}
+/* department */
+.department{
+    background: var(--icons-bg);
+}
 .department .row{
     display: flex;
     flex-wrap: wrap;
@@ -262,9 +302,9 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 40px 20px 0 20px;
+    margin: 10px 5px 0 05px;
+    padding: 0;
 }
-
 .gallery .heading{
     width: 90%;
     padding-bottom: 50px;
@@ -390,18 +430,16 @@ button{
     align-items: center;
     height:100%;
 }
-
+.documents{
+    background: var(--icons-bg);
+}
 .documents .container .grid-2{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+   
 }
 
-.qms{
-    padding-left: 40px;
-    padding-right: 80px;
-}
 .qms h3{
     display: flex;
     align-items: left;
@@ -411,10 +449,6 @@ button{
     font-size: 1.8rem;
 }
 
-.other{
-    padding-left: 80px;
-    padding-right: 40px;
-}
 .other h3{
     display: flex;
     align-items: left;
