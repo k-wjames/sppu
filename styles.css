@@ -410,6 +410,20 @@ button{
     text-transform: none;
     text-align: justify;
 }
+
+.statistics{
+    background: var(--primary);
+    padding: 40px;
+}
+
+.statistics .sub-heading{
+    color: var(--color-light-grey);
+}
+
+.statistics .stats .content h1{
+    align-items: center;
+    justify-items: center;
+}
 /* bullet color not yet changing to the set color-check on this later*/
 .swiper-pagination-bullet-active{
     background: var(--primary);
@@ -510,6 +524,7 @@ button{
         font-size: 1.5rem;
     }
 
+   
     .about .about-slider .slide .image img{
 
         display: block;
@@ -535,6 +550,7 @@ button{
        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
    }
 
+
    header .navbar.active{
     clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
    }
@@ -556,7 +572,7 @@ button{
 .hero-image{
     width: fit-content;
     height: fit-content;}
-    
+
 }
 
 @media(max-width:991px){
