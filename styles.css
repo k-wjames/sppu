@@ -335,6 +335,21 @@ button{
     width: 32.5%;
 }
 
+
+.gallery .box .files{
+
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    align-items: flex-start;
+}
+
+.gallery .box .files li a{
+
+    color: var(--dark);
+    font-size: 1.5rem;
+}
+
 .gallery .box .dream img{
     width: 100%;
     padding-bottom: 15px;
