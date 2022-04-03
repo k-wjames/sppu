@@ -23,12 +23,12 @@ img {
   transition: 400ms;
 }
 .user-name {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-size: 2.2rem;
 }
 .designation {
   font-size: 1.5rem;
-  text-transform: none;
+  /* text-transform: none; */
 }
 
 .card p {
@@ -45,7 +45,7 @@ img {
   margin: 5px;
   color: var(--grey-color);
   /* min-height: 10px; */
-  min-height: 180px;
+  min-height: 18rem;
 }
 
 .content_card p {

@@ -250,6 +250,7 @@ button {
   border: 0;
   border-radius: 5px;
   padding: 5px 15px;
+  cursor: pointer;
 }
 
 .about .about-slider .slide {
@@ -378,46 +379,93 @@ ABOUT SECTION
  */
 
 /* -------------------------------------------
-MODAL & MODAL CONTAINER
+TEAM AND MODALS
 --------------------------------------------- */
+.team-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: #27ae60; */
+  padding: 2rem 0;
+}
 
+@media screen and (max-width: 500px) {
+  .team-container {
+    flex-direction: column;
+  }
+}
+
+.team-member {
+  background-color: var(--color-light);
+  box-shadow: 0 10px 30px rgba(75, 75, 75, 0.2),
+    0 0px 20px rgba(122, 122, 122, 0.1);
+  border-radius: 5px;
+  padding: 1px;
+  /* cursor: pointer; */
+}
+
+.team-member .profile-img {
+  border-radius: 5px 5px 0 0;
+}
+@media screen and (max-width: 500px) {
+  .team-member .profile-img {
+    width: 100%;
+    max-height: auto;
+  }
+}
+
+.member-profile {
+  padding: 1.5rem 1rem;
+}
+
+/* MODAL AND CONTAINER */
 .modal-container {
+  z-index: 10;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  /* position: relative; */
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  pointer-events: none;
-  z-index: 5;
-  transition: opacity 0.5s ease;
 }
 
 .modal {
-  background-color: var(--color-light);
-  width: 900px;
-  max-width: 100%;
-  border-radius: 5px;
-  padding: 30px 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  /* position: relative; */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
   position: absolute;
-  z-index: 10;
-
-  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  background-color: var(--color-light);
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 20;
 }
 
-.modal-container.show {
-  pointer-events: auto;
-  opacity: 1;
+/* BACKGROUND OF THE MODAL */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* TO HIDE THE MODAL and overlay*/
+.hidden {
+  display: none;
+}
+
+.modal ul li {
+  list-style-position: inside;
 }
 
 /* -------------------------------------------
