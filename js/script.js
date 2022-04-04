@@ -8,36 +8,36 @@ menu.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-// MODAL FUNCTIONALITY
+/****************MODAL FUNCTIONALITY*******************************/
 
-const teamMembers = document.querySelectorAll(".team-member");
-const overlay = document.querySelector(".overlay");
-const modal = document.querySelector(".modal");
-const closeModalBtn = document.querySelector(".close-modal");
+// open modal
 
-//function to open modal
-const openModal = function () {
-  // remove the hidden class
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-};
-// function to close modal
-function closeModal() {
-  // add the hidden class
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
+const cards = document.querySelectorAll("[data-open]");
+const hide = "hidden";
+
+for (const card of cards) {
+  card.addEventListener("click", function () {
+    const modal = this.nextElementSibling;
+    modal.classList.remove(hide);
+
+    const overlay = modal.nextElementSibling;
+    overlay.classList.remove(hide);
+  });
 }
 
-// open the modal of the specific clicked card or the team member
-for (let i = 0; i < teamMembers.length; i++) {
-  console.log(i);
-  let member = teamMembers[i];
-  console.log(member);
-  teamMembers[i].addEventListener("click", openModal);
+// close modal
+const closeModalButtons = document.querySelectorAll("[data-close]");
+for (const btn of closeModalButtons) {
+  btn.addEventListener("click", function () {
+    const modal = this.parentElement;
+    modal.classList.add(hide);
+
+    const overlay = modal.nextElementSibling;
+    overlay.classList.add(hide);
+  });
 }
 
-// close modal when the overlay is clicked or the close button has been
-closeModalBtn.addEventListener("click", closeModal);
+/************swiper*****************************/
 // var swiper = new Swiper(".about-slider", {
 //     spaceBetween: 30,
 //     centeredSlides: true,
