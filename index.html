@@ -162,15 +162,15 @@
           <h1 class="heading">Our Statistics</h1>
 
           <div class="grid grid-3">
-            <div class="stats content">
+            <div class="stat content">
               <h1>356</h1>
               <h1>Reports Submitted</h1>
             </div>
-            <div class="stats content">
+            <div class="stat content">
               <h1>356</h1>
               <h1>Reports Submitted</h1>
             </div>
-            <div class="stats content">
+            <div class="stat content">
               <h1>356</h1>
               <h1>Reports Submitted</h1>
             </div>
@@ -297,6 +297,138 @@
 
         </div> -->
     </section>
+
+    <!-- about section ends here -->
+
+    <!-- stats section start here -->
+    <section class="stats" id="stats">
+      <div class="main">
+        <div class="mycards">
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">87%</div>
+              <div class="cardi-name">Staff Happiness Index</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">12,000</div>
+              <div class="cardi-name">Partcipants Trained</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">90%</div>
+              <div class="cardi-name">Employee Satisfaction Index</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">2</div>
+              <div class="cardi-name">Innovations</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">8</div>
+              <div class="cardi-name">PC Cycles</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="mycards">
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">81%</div>
+              <div class="cardi-name">Customer Satisfaction Index</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">83%</div>
+              <div class="cardi-name">Work Environment Index</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">Kshs. 68.M</div>
+              <div class="cardi-name">AGPO</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">2</div>
+              <div class="cardi-name">Buy Kenya, Build Kenya</div>
+            </div>
+
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+
+          <div class="cardi">
+            <div class="cardi-content">
+              <div class="number">Kshs. 8.3B</div>
+              <div class="cardi-name">Vision 2030</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="mycharts">
+          <div class="chart">
+            <h2>Monthly Partcipant Numbers FY 2021/22</h2>
+            <canvas id="lineChart"></canvas>
+          </div>
+          <div class="chart">
+            <h2>Customers FY 2021/22</h2>
+            <canvas id="doughnut"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- stats section ends here -->
+
     <!--PC Section starts Here-->
 
     <section class="pc" id="pc">
@@ -743,180 +875,8 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="js/lineChart.js"></script>
+    <script src="js/doughnut.js"></script>
   </body>
 </html>
-
-<!-- 
-     <div class="card" id="open">
-                    <img src="./img/angela.JPG" class="profile-img">
-                    <h4 class="user-name">Angela</h4>
-                    <h4 class="designation">Head of Department</h4>
-                    <div class="modal-container" id="modal-container">
-                        <div class="modal">
-
-                   
-
-                            <p>Ms. Angela Rima is a Professional Monitoring and Evaluation Specialist
-                                with twelve years of experience dedicated to tracking and reporting. Professional
-                                experience and education have helped to develop a comprehensive view of the productivity
-                                process, including how to accurately measure progress beyond simply reporting numbers.
-                            </p>
-
-                            <p>Ms. Rima is diversely experienced in designing, planning, implementing,
-                                monitoring and evaluating in the public and private sectors. She has an understanding of
-                                how to identify areas, outperforming expectations as well as those that need
-                                improvement.</p>
-
-                            <p>She is accustomed to lead ambitious and complex programs through senior
-                                management, technical leadership and strategic direction as well as engaging and leading
-                                stakeholder relationships. Her areas of professional strengths include: </p>
-
-                            <p> • Team leader with exceptional interpersonal and communication skills
-                                refined through multicultural and multifunctional team experiences.<br>
-                                • Recognized for excellence as a result of sustaining high performance standards Program
-                                design, development, implementation, monitoring and evaluation excellent planning,
-                                organization and problem-solving skills.<br>
-                                • Quality improvement.<br>
-                                • Project evaluation.<br>
-                            </p>
-
-                            <p>Angela enjoys travelling, cooking and dancing. </p>
-
-
-                            <a href=""><button id="close">Close</button></a>
-
-                         
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="card" id="open-pauline">
-                    <img src="./img/pauline.JPG" class="profile-img">
-                    <h4 class="user-name">Pauline</h4>
-                    <h4 class="designation">Administration Officer</h4>
-
-                    <div class="modal-container" id="modal-container-pauline">
-                        <div class="modal">
-                            <p align="justify">Ms. Pauline Kemunto is a professional and enthusiastic administration
-                                officer with over four years working experience in the department. She has a bachelor’s
-                                degree in Economics and Statistics and a diploma in Business Administration. She is also
-                                a trained and certified Integrity Assurance Officer, Fire Marshal, Quality Management
-                                System internal auditor, Information Security Management System Champion, and advanced
-                                excel data analyst. Her knowledge and experience has made her an expert level
-                                understanding of the department’s mandate, her key area being process improvement,
-                                corporate performance, and monitoring, evaluation and reporting. </p>
-
-                            <p align="justify">She is self-motivated, goal oriented, and a team player with a strong
-                                interpersonal and management skills, which has established her reputation for
-                                outstanding performance. </p>
-
-                            <a href=""><button id="close-pauline">Close</button></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="card" id="open-muli">
-                    <img src="./img/daniel.JPG" class="profile-img">
-                    <h4 class="user-name">Muli</h4>
-                    <h4 class="designation">Administration Officer</h4>
-
-                    <div class="modal-container" id="modal-container-muli">
-                        <div class="modal">
-                            <p align="justify">Mr. Muli possesses remarkable experience in strategy alignment, business
-                                intelligence gathering, data manipulation, performance management, monitoring,
-                                evaluation and report writing. Muli is dependable and reliable in supporting and
-                                enabling team effort in the department.</p>
-
-                            <a href=""><button id="close-muli">Close</button></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="card" id="open-fridah">
-                    <img src="./img/fridah.JPG" class="profile-img">
-                    <h4 class="user-name">Fridah</h4>
-                    <h4 class="designation">Administration Officer</h4>
-
-                    <div class="modal-container" id="modal-container-fridah">
-                        <div class="modal">
-                            <p align="justify">Fridah is a Strategy Planning and Performance Officer. I am a highly
-                                organized, dedicated, and ambitious person, with a proven ability to improve working
-                                environments. I am experienced in diverse fields ranging from data collection, analysis,
-                                and resource management to strategy planning.</p>
-
-                            <a href=""><button id="close-fridah">Close</button></a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="card" id="open-kariuki">
-                    <img src="./img/james.JPG" class="profile-img">
-                    <h4 class="user-name">Kariuki</h4>
-                    <h4 class="designation">Administration Officer</h4>
-
-                    <div class="modal-container" id="modal-container-kariuki">
-                        <div class="modal">
-                            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis totam
-                                blanditiis accusantium omnis reiciendis aperiam, earum doloribus magni harum fugit
-                                magnam recusandae? Saepe quasi mollitia repellat omnis, voluptatibus voluptatum.</p>
-
-                            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium culpa
-                                id dolores tempore impedit. Doloribus sint maiores suscipit voluptates debitis. </p>
-
-                            <a href=""><button id="close-kariuki">Close</button></a>
-                        </div>
-                    </div>
-
-                </div>
- -->
-
-<!-- <div class="grid text-center my-4">
-    
-                    <div class="card">
-                        <img src="./img/1.JPG" class="profile-img">
-                        <h4 class="user-name">Angela</h4>
-                        <h4 class="designation">Head of Department</h4>
-                        <p align="justify">Ms. Angela Rima is a Professional Monitoring and Evaluation Specialist with twelve years of experience dedicated to tracking and reporting. Professional experience and education have helped to develop a comprehensive view of the productivity process, including how to accurately measure progress beyond simply reporting numbers. 
-                            <br><br>Ms. Rima is diversely experienced in designing, planning, implementing, monitoring and evaluating in the public and private sectors. She has an understanding of how to identify areas, outperforming expectations as well as those that need improvement.
-                            <br><br>She is accustomed to lead ambitious and complex programs through senior management, technical leadership and strategic direction as well as engaging and leading stakeholder relationships. Her areas of professional strengths include: 
-                            
-                            <br>•	Team leader with exceptional interpersonal and communication skills refined through multicultural and multifunctional team experiences
-                            <br>•	Recognized for excellence as a result of sustaining high performance standards Program design, development, implementation, monitoring and evaluation excellent planning, organization and problem-solving skills
-                            <br>•	Quality improvement
-                            <br>•	Project evaluation<br><br>
-                            Angela enjoys travelling, cooking and dancing.
-                            </p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/2.JPG" class="profile-img">
-                        <h4 class="user-name">Pauline</h4>
-                        <h4 class="designation">Administration Officer</h4>
-                        <p align="justify">Ms. Pauline Kemunto is a professional and enthusiastic administration officer with over four years working experience in the department. She has a bachelor’s degree in Economics and Statistics and a diploma in Business Administration. She is also a trained and certified Integrity Assurance Officer, Fire Marshal, Quality Management System internal auditor, Information Security Management System Champion, and advanced excel data analyst. Her knowledge and experience has made her an expert level understanding of the department’s mandate, her key area being process improvement, corporate performance, and monitoring, evaluation and reporting.<br><br>She is self-motivated, goal oriented, and a team player with a strong interpersonal and management skills, which has established her reputation for outstanding performance  
-                            </p>
-                     </div>
-
-
-                     <div class="card">
-                        <img src="./img/3.JPG" class="profile-img">
-                        <h4 class="user-name">Muli</h4>
-                        <h4 class="designation">Administration Officer</h4>
-                        <p align="justify">Mr. Muli possesses remarkable experience in program management and administration, strategy alignment, business intelligence gathering, performance management, monitoring, evaluation and report writing. <br><br>Mr. Muli has Human Resource training background. He has also trained in: Advanced Excel for Data Modeling, ISMS Champion, Focal Point Person on National Cohesion and Values, Integrity Assurance Officer and Secretary to KSG Lower Kabete Integrity Assurance Committee.  
-                            </p>
-                    </div>
-    
-                    <div class="card">
-                        <img src="./img/4.JPG" class="profile-img">
-                        <h4 class="user-name">Fridah</h4>
-                        <h4 class="designation">Administration Officer</h4>
-                        <p align="justify">Ms. Fridah is a Strategy Planning and Performance Officer. I am a highly organized, dedicated, and ambitious person, with a proven ability to improve working environments. I am experienced in diverse fields ranging from data collection, analysis, and resource management to strategy planning.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/5.JPG" class="profile-img">
-                    <h4 class="user-name">Kariuki</h4>
-                    <h4 class="designation">Administration Officer</h4>
-                    <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, facere reiciendis maiores rem culpa quis nam mollitia animi rerum porro praesentium repellat corrupti saepe nostrum alias odit aliquam voluptates odio!</p>
-                </div>
-                   
-    
-                </div>-->
