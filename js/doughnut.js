@@ -3,7 +3,15 @@ const chart = document.getElementById("doughnut").getContext("2d");
 const myCustomers = new Chart(chart, {
   type: "doughnut",
   data: {
-    labels: ["National Gov", "County Gov", "Ministries", "MDAs", "Parastatals", "NGOs", "Other"],
+    labels: [
+      "National Gov",
+      "County Gov",
+      "Ministries",
+      "MDAs",
+      "Parastatals",
+      "NGOs",
+      "Other",
+    ],
     datasets: [
       {
         label: "# of Votes",
