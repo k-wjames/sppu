@@ -1,6 +1,6 @@
 
-const ctx = document.getElementById('doughnut').getContext('2d');
-const myChart = new Chart(ctx, {
+const coz = document.getElementById('doughnut').getContext('2d');
+const myChart = new Chart(coz, {
     type: 'doughnut',
     data: {
         labels: ['National Gov', 'Counties', 'Ministries', 'State Departments', 'Parastatals', 'NGOs'],
