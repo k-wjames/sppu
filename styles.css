@@ -357,13 +357,13 @@ ABOUT SECTION
   padding-top: 0rem;
 }
 
-.statistics .stats {
+.statistics .stat {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.statistics .stats h1:first-child {
+.statistics .stat h1:first-child {
   /* align-items: center;
     justify-items: center; */
   font-size: 3rem;
@@ -377,6 +377,73 @@ ABOUT SECTION
   height: 100%;
 }
  */
+
+/* ******************************** 
+STATS SECTION AND CHARTS
+
+***********************************/
+
+.stats {
+  background: var(--color-light-grey);
+  height: auto;
+}
+
+.stats .container .main {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background: #f5f5f5;
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.mycards {
+  width: 100%;
+  padding: 35px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.mycards .cardi {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-light);
+  border-radius: 10px;
+}
+.number {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+.cardi-name {
+  color: #888;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.icon-box i {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.mycharts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.chart {
+  background: var(--color-light);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
 
 /* -------------------------------------------
 TEAM AND MODALS
