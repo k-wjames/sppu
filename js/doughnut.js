@@ -29,10 +29,6 @@ const myCustomers = new Chart(chart, {
     ],
   },
   options: {
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
+    responsive:true
   },
 });
