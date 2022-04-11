@@ -212,9 +212,32 @@ header .icons #menubar{
     color: var(--dark);
 }
 
+.hero {
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+}
 
+.hero .overlay {
+    width: 100%;
+    height: 100%;
 
+}
 
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+.background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
 
 /* department */
 .department{
@@ -428,7 +451,40 @@ button{
     box-shadow: 0 7px 25px 0 rgba(0, 0 , 0, .08);
     width: 100%;
 }
-/* Styking the close div*/
+
+/*QMS starts here*/
+
+/* #container{
+    width: 80%;
+    background: var(--primary);
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+} */
+.qms .sub-heading{
+
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+
+}
+
+.principles{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.principles .data{
+    border-radius: 10px;
+    background: var(--light);
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Styling the close div*/
 .close{
     position: absolute;
     top: 0;
