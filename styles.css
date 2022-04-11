@@ -452,6 +452,40 @@ button{
     width: 100%;
 }
 
+/* PC starts here */
+
+.pc .performance{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pc .performance .data{
+
+    border-radius: 10px;
+    background: var(--color-light);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+
+}
+
+.pc .sub-heading{
+
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+
+}
+
+.performance .data p{
+
+    font-size: 1.5rem;
+
+}
+
+
 /*QMS starts here*/
 
 /* #container{
