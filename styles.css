@@ -239,43 +239,79 @@ header .icons #menubar{
 
 }
 
-/* department */
-.department{
-    background: var(--icons-bg);
-}
-.department .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
+/* Our Department Starts here*/
 
+.our-department{
+background: var(--white);
 }
 
-.department .row .image{
-    flex: 1 1 45rem;
+.department-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.department .row .image img{
+.department-main .department-banner img{
     width: 100%;
+    height: auto;
 }
 
-.department .row .content{
-    flex: 1 1 45rem;
-}
-.department .row .content h3{
-    color: var(--dark);
-    font-size: 3rem;
-    padding: .5rem 0;
+.department-main .department-content{
+    display: block;
+    padding: 20px;
 }
 
-.department .row .content p{
-    color: var(--light);
+.department-content h3{
     font-size: 2rem;
-    padding: .5rem 0;
-    line-height: 2;
-    text-transform: none;
+    color: var(--primary);
 }
 
+.department-content p{
+    font-size: 1.5rem;
+}
+
+/* Department Objective starts here */
+
+.about-department{
+    width: 100vw;
+    height: auto;
+    background: var(--primary);
+}
+
+.department-content{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.objective{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.objective .objective-icon{
+    background: var(--primary);
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.objective-data h4{
+
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.objective-data p{
+    font-size: 1.4rem;
+}
 
 button{
     background-color: var(--primary);
@@ -283,14 +319,6 @@ button{
     border: 0;
     border-radius: 5px;
     padding: 5px 15px;
-}
-
-.about .about-slider .slide{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 2rem;
 }
 
 .modal-container{
@@ -618,44 +646,6 @@ button{
     font-size: 3.5rem;
     transform: rotate(45deg);
     cursor: pointer;
-}
-.about .about-slider .slide .content{
-    flex: 1 1 45rem;
-    align-items: center;
-
-}
-
-.about .about-slider .slide .image{
-    flex: 1 1 45rem;
-}
-
-.about .about-slider .slide .image img{
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 50px;
-}
-
-.about .about-slider .slide .content span{
-    color: var(--primary);
-    font-size: 2.5rem;
-}
-
-.about .about-slider .slide .content h3{
-    color: var(--dark);
-    font-size: 3.1rem;
-}
-
-.about .about-slider .slide .content p{
-    color: var(--light);
-    font-size: 2rem;
-    padding: 1rem 0;
-    line-height: 1.5;
-    color: var(--dark);
-    text-transform: none;
-    text-align: justify;
 }
 
 .statistics{
