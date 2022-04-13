@@ -245,25 +245,6 @@ header .icons #menubar{
     padding: 0;
 }
 
-/* .landing{
-    padding: 0;
-    width: 100vw;
-    height: 80vh;
-}
-
-.landing .landing-main{
-    width: 100%;
-    height: 100%;
-}
-.landing .landing-main .landing-background img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
 /* Our Department Starts here*/
 
 .our-department{
@@ -379,73 +360,34 @@ button{
     box-shadow: 0 2px 4px rgba(0, 0 , 0, .2);
     position: relative;
 }
-/* Gallery section*/
-.gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 10px 5px 0 05px;
-    padding: 0;
-}
-.gallery .heading{
-    width: 90%;
-    padding-bottom: 50px;
 
+.gallery{background: var(--dark);}
+
+
+.gallery-main .gallery-data{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
 }
 
-.gallery .heading h3{
-    font-size: 2rem;
-    font-weight: bolder;
-    padding-bottom: 10px;
+.gallery-data .gallery-item{
+    padding: 40px;
+    border-radius: 10px;
+    background: var(--primary);
+    margin: 10px;
 }
 
-.gallery .heading h3 span{
-    color: var(--primary);
+.gallery-item li {
+
+    list-style: none;
+    font-size: 1.8rem;
+    color: var(--dark);
 }
 
-.gallery .box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   
-}
-
-.gallery .box .dream{
-
-    display: flex;
-    flex-direction: column;
-    width: 32.5%;
-}
-
-
-.gallery .box .files{
-
-    display: flex;
-    flex-direction: column;
-    width: 32.5%;
-    align-items: flex-start;
-}
-
-.gallery .box .files li a{
+.gallery-item li a{
 
     color: var(--dark);
-    font-size: 1.5rem;
 }
 
-.gallery .box .dream img{
-    width: 100%;
-    padding-bottom: 15px;
-    border-radius: 5px;
-}
-
-.gallery .btn{
-    margin: 40px 0 70px 0;
-    background: var(--primary);
-    color: var(--color-light-grey);
-    padding: 5px 40px;
-}
 .stats{
     background: var(--color-light-grey);
     height: auto;
@@ -544,13 +486,6 @@ button{
 
 /*QMS starts here*/
 
-/* #container{
-    width: 80%;
-    background: var(--primary);
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
-} */
 .qms .sub-heading{
 
     align-items: center;
@@ -689,10 +624,7 @@ button{
     align-items: center;
     justify-items: center;
 }
-/* bullet color not yet changing to the set color-check on this later*/
-.swiper-pagination-bullet-active{
-    background: var(--primary);
-}
+
 .container{
     max-width: 100vw;
     margin: 0 auto;
@@ -724,34 +656,66 @@ button{
     align-items: center;
     height:100%;
 }
-.documents{
-    background: var(--icons-bg);
-}
-.documents .container .grid-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
+/* Documents start here */
+.documents .documents-main{
+    width: 100%;
+    margin: auto;
+    background:var(--dark);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    justify-items: center;
+    
 }
 
-.qms h3{
-    display: flex;
-    align-items: left;
-    justify-content: left;
+.documents-main .documents-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
 }
-.qms ul li a{
+
+.qms-docs h3{
+    color: var(--color-light-grey);
+    padding: 5px;
     font-size: 1.8rem;
 }
-
-.other h3{
-    display: flex;
-    align-items: left;
-    justify-content: left;
+.qms-docs ul{
+    list-style: none;
+    padding: 5px;
 }
-.other ul li a{
+
+.qms-docs ul li {
+    margin-top: 10px;
+}
+
+.qms-docs ul li a{
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-top: 50px;
+}
+
+.other-docs h3{
+
+    color: var(--color-light-grey);
+    padding: 5px;
     font-size: 1.8rem;
+
 }
 
+.other-docs ul{
+    list-style: none;
+    padding: 5px;
+}
+
+.other-docs ul li {
+    margin-top: 10px;
+}
+
+
+.other-docs ul li a{
+    font-size: 1.5rem;
+    color: var(--white);
+}
 
 .footer{
     width: 100%;
