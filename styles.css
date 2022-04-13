@@ -722,7 +722,7 @@ button{
 .footer{
     width: 100%;
     background: var(--primary);
-    color: var(--dark);
+    color: var(--color-light);
 }
 
 .footer .main-footer{
@@ -732,12 +732,11 @@ button{
 
 .footer a{
     color: var(--color-light);
-    color: var(--dark);
     font-size: 1.5rem;
 
 }
 .footer h1{
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-transform: none;
 }
 
