@@ -361,9 +361,6 @@ button{
     position: relative;
 }
 
-.gallery{background: var(--dark);}
-
-
 .gallery-main .gallery-data{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -372,7 +369,7 @@ button{
 .gallery-data .gallery-item{
     padding: 40px;
     border-radius: 10px;
-    background: var(--primary);
+    background: var(--dark);
     margin: 10px;
 }
 
@@ -380,14 +377,14 @@ button{
 
     list-style: none;
     font-size: 1.8rem;
-    color: var(--dark);
 }
 
 .gallery-item li a{
 
-    color: var(--dark);
+    color: var(--white);
 }
 
+/* Stats start here */
 .stats{
     background: var(--color-light-grey);
     height: auto;
