@@ -17,55 +17,22 @@ menu.onclick=()=>{
   close.addEventListener('click',()=>{
     modal_container.classList.remove('show');
   });
-
-
-  const openPauline=document.getElementById('open-pauline');
-  const modal_containerPauline=document.getElementById('modal-container-pauline');
-  const closePauline=document.getElementById('close-pauline');
-
-  openPauline.addEventListener('click',()=>{
-    modal_containerPauline.classList.add('show');
-  });
-
-  closePauline.addEventListener('click',()=>{
-    modal_containerPauline.classList.remove('show');
-  });
-
-
-  const openMuli=document.getElementById('open-muli');
-  const modal_containerMuli=document.getElementById('modal-container-muli');
-  const closeMuli=document.getElementById('close-muli');
-
-  openMuli.addEventListener('click',()=>{
-    modal_containerMuli.classList.add('show');
-  });
-
-  closeMuli.addEventListener('click',()=>{
-    modal_containerMuli.classList.remove('show');
-  });
-
-  const openFridah=document.getElementById('open-fridah');
-  const modal_containerFridah=document.getElementById('modal-container-fridah');
-  const closeFridah=document.getElementById('close-fridah');
-
-  openFridah.addEventListener('click',()=>{
-    modal_containerFridah.classList.add('show');
-  });
-
-  closeFridah.addEventListener('click',()=>{
-    modal_containerFridah.classList.remove('show');
-  });
-
-  const openKariuki=document.getElementById('open-kariuki');
-  const modal_containerKariuki=document.getElementById('modal-container-kariuki');
-  const closeKariuki=document.getElementById('close-kariuki');
-
-  openKariuki.addEventListener('click',()=>{
-    modal_containerKariuki.classList.add('show');
-  });
-
-  closeKariuki.addEventListener('click',()=>{
-    modal_containerKariuki.classList.remove('show');
-  });
   
-  
+
+
+const productContainers = [...document.querySelectorAll('.department-content')];
+const nxtBtn = [...document.querySelectorAll('.next-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})

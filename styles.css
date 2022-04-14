@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-:root{
- --primary:#27ae60;
- --dark:#192a56;
- --light:#666;
- --white:#fff;
- --black: #000000;
- --icons-bg:#eee;
- --box-shadow:0 0.5rem rgba(0,0,0,0.1);
+:root {
+    --primary: #27ae60;
+    --dark: #192a56;
+    --light: #666;
+    --white: #fff;
+    --black: #000000;
+    --icons-bg: #eee;
+    --box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
 
- --grey-color:#333;
- --color-light:#fff;
- --color-dark: #1d2026;
- --color-light-grey:#f4f4f4;
+    --grey-color: #333;
+    --color-light: #fff;
+    --color-dark: #1d2026;
+    --color-light-grey: #f4f4f4;
 
 }
 
-*{
+* {
     font-family: 'Nunito', sans-serif;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -28,35 +28,36 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
     margin: 0;
 }
-section{
+
+section {
     padding: 2rem 9%;
 }
 
 /*section:nth-child(even){
     background: var(--icons-bg);
 }.*/
-.sub-heading{
-    text-align:center;
+.sub-heading {
+    text-align: center;
     color: var(--primary);
     font-size: 2rem;
     padding-top: 5rem;
 }
 
-.heading{
-    text-align:center;
+.heading {
+    text-align: center;
     color: var(--dark);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
 
-.btn{
+.btn {
     margin-top: 1rem;
     display: inline-block;
     font-size: 1.7rem;
@@ -67,12 +68,12 @@ section{
     padding: .8rem 3rem;
 }
 
-.btn:hover{
-    background:var(--primary);
+.btn:hover {
+    background: var(--primary);
     letter-spacing: 1rem;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -85,14 +86,15 @@ header{
     z-index: 10;
     box-shadow: var(--box-shadow);
 }
-header .logo{
+
+header .logo {
     color: var(--dark);
     font-size: 1.7rem;
     font-weight: bolder;
 
 }
 
-header .navbar a{
+header .navbar a {
 
     font-size: 1.5rem;
     border-radius: .5rem;
@@ -101,17 +103,17 @@ header .navbar a{
 }
 
 header .navbar a.active,
-header .navbar a:hover{
+header .navbar a:hover {
     color: var(--white);
-    background:var(--primary);
+    background: var(--primary);
 }
 
-header.icons{
+header.icons {
     align-self: center;
 }
 
 header .icons i,
-header .icons a{
+header .icons a {
     cursor: pointer;
     margin: left 0.5rem;
     height: 4.5rem;
@@ -124,51 +126,22 @@ header .icons a{
 }
 
 header .icons i:hover,
-header .icons a:hover{
+header .icons a:hover {
     color: var(--white);
     background: var(--primary);
     transform: rotate(360deg);
 
 }
-header .icons #menubar{
+
+header .icons #menubar {
     display: none;
 }
 
-#home{
-    height: 95vh;
-    width: 100vw;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    
-}
-
-#home .hero-image{
-    width: 100%;
-    height: auto;
-}
-
-
-#home .introduction {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#welcome  {
+#welcome {
     color: var(--white);
     font-size: 3rem;
 }
+
 #strategy {
     color: var(--color-light-grey);
     font-size: 3rem;
@@ -177,36 +150,38 @@ header .icons #menubar{
     z-index: 100;
 }
 
-.pc{
+.pc {
     background: var(--icons-bg);
 }
 
 
-.container .description{
+.container .description {
     width: 100%;
     height: auto;
 }
 
-.container .description p{
+.container .description p {
     font-size: 1.5rem;
     font-weight: bolder;
 }
 
-.container .description h1{
+.container .description h1 {
     font-size: 2rem;
     font-weight: bolder;
     color: var(--dark);
 }
-.container .principle{
+
+.container .principle {
     width: 100%;
     height: auto;
 }
-.container .principle p{
+
+.container .principle p {
     font-size: 1.5rem;
     font-weight: bolder;
 }
 
-.container .principle h1{
+.container .principle h1 {
     font-size: 2rem;
     font-weight: bolder;
     color: var(--dark);
@@ -241,18 +216,41 @@ header .icons #menubar{
 
 /* Landing Section starts here */
 
-.landing{
+.landing {
+    height: 80vh;
+    width: 100vw;
     padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
 }
+
+.landing .landing-main {
+
+    /* display: block; */
+    z-index: 1;
+
+}
+
+.landing .landing-overlay {
+    z-index: 20;
+}
+
 
 /* Our Department Starts here*/
 
-.our-department{
-background: var(--white);
-margin-top: 30px;
+.our-department {
+    background: var(--white);
+    margin-top: 30px;
 }
 
-.department-main{
+.department-main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 10px;
@@ -260,45 +258,47 @@ margin-top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.department-main .department-banner img{
+.department-main .department-banner img {
     width: 400px;
     height: 400px;
     object-fit: fill;
     padding: 30px;
 }
 
-.department-main .department-content{
+.department-main .department-content {
     display: block;
     padding: 20px;
 }
 
-.department-content h3{
+.department-content h3 {
     font-size: 2rem;
     color: var(--primary);
 }
 
-.department-content p{
+.department-content p {
     font-size: 1.5rem;
 }
 
 /* Department Objective starts here */
 
-.about-department{
+.about-department {
     width: 100vw;
     height: auto;
     background: var(--primary);
+    position: relative;
+    overflow: hidden;
 }
 
-.department-content{
+.department-content {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
 }
 
-.objective{
+.objective {
     display: grid;
-    grid-template-columns: 1fr 4fr;
     background: var(--white);
     padding: 10px;
     border-radius: 10px;
@@ -306,23 +306,110 @@ margin-top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.objective .objective-icon{
+.objective .objective-icon {
     background: var(--primary);
     margin: 5px;
     border-radius: 10px;
 }
 
-.objective-data h4{
+.objective-data h4 {
 
     color: var(--primary);
     font-size: 1.2rem;
 }
 
-.objective-data p{
+.objective-data p {
     font-size: 1.4rem;
 }
 
-button{
+/* new slider styling for the departmental objectives */
+
+.slide .pre-btn,
+.slide .next-btn {
+    border: none;
+    width: 10vh;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+
+/* PRODUCTS */
+
+.about-department .pre-btn,
+.about-department .next-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.next-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.next-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.next-btn:hover img {
+    opacity: 1;
+}
+
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+/* Other bunch of stuff */
+
+button {
     background-color: var(--primary);
     color: var(--color-light);
     border: 0;
@@ -330,7 +417,7 @@ button{
     padding: 5px 15px;
 }
 
-.modal-container{
+.modal-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,34 +426,34 @@ button{
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0,0 , 0, .2);
+    background-color: rgba(0, 0, 0, .2);
     opacity: 0;
     pointer-events: none;
     z-index: 5;
     transition: opacity 0.5s ease;
 }
 
-.modal-container.show{
+.modal-container.show {
     pointer-events: auto;
     opacity: 1;
 }
 
-.modal{
+.modal {
     background-color: var(--color-light);
     width: 900px;
     max-width: 100%;
     border-radius: 5px;
     padding: 30px 50px;
-    box-shadow: 0 2px 4px rgba(0, 0 , 0, .2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     position: relative;
 }
 
-.gallery-main .gallery-data{
+.gallery-main .gallery-data {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.gallery-data .gallery-item{
+.gallery-data .gallery-item {
     padding: 40px;
     border-radius: 10px;
     background: var(--dark);
@@ -379,27 +466,27 @@ button{
     font-size: 1.8rem;
 }
 
-.gallery-item li a{
+.gallery-item li a {
 
     color: var(--white);
 }
 
 /* Stats start here */
-.stats{
+.stats {
     background: var(--color-light-grey);
     height: auto;
 }
 
-.stats .container .main{
+.stats .container .main {
     position: absolute;
     top: 60px;
     width: 100%;
     min-height: calc(100vh - 60px);
     background: #F5F5F5;
-    box-shadow: 0 7px 25px 0 rgba(0, 0 , 0, .08);
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .08);
 }
 
-.mycards{
+.mycards {
     width: 100%;
     padding: 35px 20px;
     display: grid;
@@ -407,7 +494,7 @@ button{
     grid-gap: 20px;
 }
 
-.mycards .cardi{
+.mycards .cardi {
     padding: 20px;
     display: flex;
     align-items: center;
@@ -415,22 +502,25 @@ button{
     background: var(--color-light);
     border-radius: 10px;
 }
-.number{
+
+.number {
     font-size: 3rem;
     font-weight: 500;
     color: var(--primary);
 }
-.cardi-name{
+
+.cardi-name {
     color: #888;
     font-weight: 600;
     font-size: 1.2rem;
 }
-.icon-box i{
+
+.icon-box i {
     font-size: 3rem;
     color: var(--primary);
 }
 
-.mycharts{
+.mycharts {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
@@ -439,23 +529,23 @@ button{
     padding-top: 0;
 }
 
-.chart{
+.chart {
     background: var(--color-light);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 7px 25px 0 rgba(0, 0 , 0, .08);
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .08);
     width: 100%;
 }
 
 /* PC starts here */
 
-.pc .performance{
+.pc .performance {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.pc .performance .data{
+.pc .performance .data {
 
     border-radius: 10px;
     background: var(--color-light);
@@ -465,7 +555,7 @@ button{
 
 }
 
-.pc .sub-heading{
+.pc .sub-heading {
 
     align-items: center;
     justify-content: center;
@@ -474,7 +564,7 @@ button{
 
 }
 
-.performance .data p{
+.performance .data p {
 
     font-size: 1.5rem;
 
@@ -483,7 +573,7 @@ button{
 
 /*QMS starts here*/
 
-.qms .sub-heading{
+.qms .sub-heading {
 
     align-items: center;
     justify-content: center;
@@ -492,14 +582,14 @@ button{
 
 }
 
-.principles{
+.principles {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
 
-.principles .data{
+.principles .data {
     border-radius: 10px;
     background: var(--color-light-grey);
     margin: 10px;
@@ -507,17 +597,18 @@ button{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.principles .data:hover{
+.principles .data:hover {
     background: var(--primary);
     color: var(--color-light);
 }
 
 
-.principles .data p{
+.principles .data p {
 
     font-size: 1.5rem;
 
 }
+
 /* Contacts Starts Here */
 .contact {
     width: 100vw;
@@ -525,7 +616,7 @@ button{
     background: var(--color-light-grey);
 }
 
-.contact .contact-us{
+.contact .contact-us {
     width: 75%;
     height: auto;
     margin: auto;
@@ -537,7 +628,7 @@ button{
 
 }
 
-.contact-details{
+.contact-details {
     background-color: var(--primary);
     font-size: 1.3rem;
     color: var(--white);
@@ -545,40 +636,40 @@ button{
     border-radius: 10px;
 }
 
-.contact-details h3{
+.contact-details h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-.contact-data{
+.contact-data {
     display: grid;
     grid-template-columns: 1fr 8fr;
     justify-content: center;
     align-items: center;
 }
 
-.contact-data i{
+.contact-data i {
     font-size: 1.8rem;
     color: var(--dark);
 }
 
 
-.contact-data p{
+.contact-data p {
     font-size: 1.5rem;
 }
 
-.social-media{
+.social-media {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 2.2rem;
     margin-top: 25px;
 }
 
-.social-media i{
+.social-media i {
     color: var(--dark);
 }
 
-.contact-location{
+.contact-location {
 
     background-color: var(--white);
     font-size: 1.3rem;
@@ -588,23 +679,23 @@ button{
 
 }
 
-.contact-location h3{
+.contact-location h3 {
     color: var(--primary);
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-.contact-location h4{
+.contact-location h4 {
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
-.contact-location p{
+.contact-location p {
     font-size: 1.5rem;
 }
 
 /* Styling the close div*/
-.close{
+.close {
     position: absolute;
     top: 0;
     right: 20px;
@@ -613,27 +704,28 @@ button{
     cursor: pointer;
 }
 
-.statistics{
+.statistics {
     background: var(--primary);
     padding: 40px;
 }
 
-.statistics .sub-heading{
+.statistics .sub-heading {
     color: var(--color-light-grey);
 }
 
-.statistics .stats .content h1{
+.statistics .stats .content h1 {
     align-items: center;
     justify-items: center;
 }
 
-.container{
+.container {
     max-width: 100vw;
     margin: 0 auto;
     overflow: auto;
     padding: 0 20px;
 }
-.grid{
+
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -641,47 +733,51 @@ button{
     align-items: center;
     height: 100%;
 }
-.grid-2{
+
+.grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
-.grid-3{
+
+.grid-3 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-5{
+.grid-5 {
     grid-template-columns: repeat(5, 1fr);
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100%;
+    height: 100%;
 }
+
 /* Documents start here */
-.documents .documents-main{
+.documents .documents-main {
     width: 100%;
     margin: auto;
-    background:var(--dark);
+    background: var(--dark);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
     justify-items: center;
-    
+
 }
 
-.documents-main .documents-data{
+.documents-main .documents-data {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
 }
 
-.qms-docs h3{
+.qms-docs h3 {
     color: var(--color-light-grey);
     padding: 5px;
     font-size: 1.8rem;
 }
-.qms-docs ul{
+
+.qms-docs ul {
     list-style: none;
     padding: 5px;
 }
@@ -690,13 +786,13 @@ button{
     margin-top: 10px;
 }
 
-.qms-docs ul li a{
+.qms-docs ul li a {
     font-size: 1.5rem;
     color: var(--white);
     margin-top: 50px;
 }
 
-.other-docs h3{
+.other-docs h3 {
 
     color: var(--color-light-grey);
     padding: 5px;
@@ -704,7 +800,7 @@ button{
 
 }
 
-.other-docs ul{
+.other-docs ul {
     list-style: none;
     padding: 5px;
 }
@@ -714,110 +810,116 @@ button{
 }
 
 
-.other-docs ul li a{
+.other-docs ul li a {
     font-size: 1.5rem;
     color: var(--white);
 }
 
-.footer{
+.footer {
     width: 100%;
     background: var(--primary);
     color: var(--color-light);
 }
 
-.footer .main-footer{
+.footer .main-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer a{
+.footer a {
     color: var(--color-light);
     font-size: 1.5rem;
 
 }
-.footer h1{
+
+.footer h1 {
     font-size: 1.9rem;
     text-transform: none;
 }
 
-.footer p{
+.footer p {
     font-size: 1.5rem;
     text-transform: none;
 }
 
 /* media querries*/
 
-@media(max-width:991px){
-    html{
+@media(max-width:991px) {
+    html {
         font-size: 45%;
     }
-    header{
+
+    header {
         padding: 1rem 2rem;
     }
 
-    header .logo{
+    header .logo {
         font-size: 1.5rem;
     }
 
-   
-    .about .about-slider .slide .image img{
+
+    .about .about-slider .slide .image img {
 
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         padding: 5px;
-      }
+    }
 }
 
-@media(max-width:768px){
-   header .icons #menubar{
-       display: inline-block;
-   }
-   header .navbar{
-       position: absolute;
-       top: 100%;
-       left: 0;
-       right: 0;
-       background: var(--white);
-       border-top: .1rem solid rgba(0,0 , 0, .2);
-       padding: 1rem;
-       clip-path: polygon(0 0,100% 0,100% 0, 0 0);
-   }
+@media(max-width:768px) {
+    header .icons #menubar {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
 
 
-   header .navbar.active{
-    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
-   }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 
-   header .navbar a{
-       display: block;
-       padding: 1.5rem;
-       margin: 1rem;
-       font-size: 2rem;
-       background: var(--icons-bg);
-   }
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--icons-bg);
+    }
 
 
-   .introduction{
-    width: 100%;
-    height: auto;
+    .introduction {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image {
+        width: fit-content;
+        height: fit-content;
+    }
+
 }
 
-.hero-image{
-    width: fit-content;
-    height: fit-content;}
-
-}
-
-@media(max-width:991px){
-    html{
+@media(max-width:991px) {
+    html {
         font-size: 40%;
     }
-    header{
-        padding: 1rem 2rem ;
+
+    header {
+        padding: 1rem 2rem;
     }
-    section{
+
+    section {
         padding: 2rem;
     }
 }

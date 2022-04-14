@@ -8,11 +8,11 @@ const myChart = new Chart(ctx, {
             label: '',
             data: [2028, 3500, 3750, 2855, 4002, 2900,3228, 3500, 3750, 2855],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)'
+                'rgb(68, 84, 106)'
                 
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)'
+                'rgb(68, 84, 106)'
                 
             ],
             borderWidth: 1
