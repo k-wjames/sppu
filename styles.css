@@ -323,17 +323,6 @@ header .icons #menubar {
     font-size: 1.4rem;
 }
 
-
-/* Other bunch of stuff */
-
-button {
-    background-color: var(--primary);
-    color: var(--color-light);
-    border: 0;
-    border-radius: 5px;
-    padding: 5px 15px;
-}
-
 /* Team starts here */
 
 .team{
