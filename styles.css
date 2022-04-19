@@ -26,6 +26,7 @@
     border: none;
     transition: all .2s linear;
     box-sizing: border-box;
+
 }
 
 html {
@@ -34,6 +35,11 @@ html {
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
     margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+img{
+    width: 100%;
 }
 
 section {
@@ -187,87 +193,82 @@ header .icons #menubar {
     color: var(--dark);
 }
 
-.hero {
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-}
-
-.hero .overlay {
-    width: 100%;
-    height: 100%;
-
-}
-
-.background {
-    width: 100%;
-    height: 100%;
-}
-
-.background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
 
 /* Landing Section starts here */
 
-.landing {
-    height: 80vh;
-    width: 100vw;
-    padding: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
+.landing{
+    background: var(--dark);
+}
+
+ .landing .showcase-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-
+    justify-content: center;
+    padding: 2rem 9%;
 }
 
-.landing .landing-main {
-
-    /* display: block; */
-    z-index: 1;
-
+ .intro-title h1{
+    font-size: 3.5rem;
+    color: var(--primary);
 }
 
-.landing .landing-overlay {
-    z-index: 20;
+.text{
+    font-size: 2.5rem;
+    color: var(--color-light-grey);
+}
+.cta .button{
+    display: inline-block;
+    color: var(--white);
+    padding: 0.9rem 0.9rem;
+    background-color: var(--primary);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.cta .button:hover{
+    color: var(--primary);
+    font-size: 1.5rem;
+    background-color: var(--white);
+    transform: scale(1.05);
+    letter-spacing: 0.2rem;
+}
+    
+
+.showcase-area .right .feature{
+    width: 80%;
+    transform: translate(40%, 20px);
+
 }
 
 
 /* Our Department Starts here*/
 
 .our-department {
-    background: var(--white);
-    margin-top: 30px;
+    background: var(--color-light-grey);
 }
 
 .department-main {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
-}
-
-.department-main .department-banner img {
-    width: 400px;
-    height: 400px;
-    object-fit: fill;
     padding: 30px;
 }
 
+.department-main .department-banner img {
+    width: 100%;
+    object-fit: fill;
+    padding: 2px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    background-color: var(--dark);
+}
+
 .department-main .department-content {
+    margin-left: 30px;
+    max-width: 90%;
     display: block;
-    padding: 20px;
 }
 
 .department-content h3 {
@@ -284,7 +285,7 @@ header .icons #menubar {
 .about-department {
     width: 100vw;
     height: auto;
-    background: var(--primary);
+    background: var(--white);
     position: relative;
     overflow: hidden;
 }
@@ -299,7 +300,7 @@ header .icons #menubar {
 
 .objective {
     display: grid;
-    background: var(--white);
+    background: var(--color-light-grey);
     padding: 10px;
     border-radius: 10px;
     margin: 5px;
@@ -322,90 +323,6 @@ header .icons #menubar {
     font-size: 1.4rem;
 }
 
-/* new slider styling for the departmental objectives */
-
-.slide .pre-btn,
-.slide .next-btn {
-    border: none;
-    width: 10vh;
-    height: auto;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 9;
-}
-
-
-
-/* PRODUCTS */
-
-.about-department .pre-btn,
-.about-department .next-btn {
-    border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 8;
-}
-
-.pre-btn {
-    left: 0;
-    transform: rotate(180deg);
-}
-
-.next-btn {
-    right: 0;
-}
-
-.pre-btn img,
-.next-btn img {
-    opacity: 0.2;
-}
-
-.pre-btn:hover img,
-.next-btn:hover img {
-    opacity: 1;
-}
-
-.collection-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.collection {
-    position: relative;
-}
-
-.collection img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collection p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-}
-
-.collection:nth-child(3) {
-    grid-column: span 2;
-    margin-bottom: 10px;
-}
 
 /* Other bunch of stuff */
 
@@ -415,6 +332,43 @@ button {
     border: 0;
     border-radius: 5px;
     padding: 5px 15px;
+}
+
+/* Team starts here */
+
+.team{
+    background: var(--color-light-grey);
+}
+
+.department-members{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.member{
+
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+
+}
+
+.member .user-name{
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.member .designation{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.member .bio{
+    margin-top: 5px;
+    font-size: 1.3rem;
 }
 
 .modal-container {
@@ -490,7 +444,7 @@ button {
     width: 100%;
     padding: 35px 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 
@@ -617,7 +571,7 @@ button {
 }
 
 .contact .contact-us {
-    width: 75%;
+    width: 80%;
     height: auto;
     margin: auto;
     display: grid;
