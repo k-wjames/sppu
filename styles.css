@@ -93,11 +93,15 @@ header {
     box-shadow: var(--box-shadow);
 }
 
-header .logo {
+/* header .logo {
     color: var(--dark);
     font-size: 1.7rem;
     font-weight: bolder;
 
+} */
+
+header .logo .my-logo{
+    width: 80px;
 }
 
 header .navbar a {
