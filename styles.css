@@ -236,7 +236,13 @@ header .icons #menubar {
 
 .showcase-area .right .feature{
     width: 80%;
-    transform: translate(40%, 20px);
+    transform: translate(30%, 20px);
+    padding: 70px;
+
+}
+
+.showcase-area .right .feature img{
+    width: 350px;
 
 }
 
