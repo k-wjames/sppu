@@ -557,6 +557,50 @@ header .icons #menubar {
 }
 
 /* Contacts Starts Here */
+
+.contact-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+form .sub-heading{
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: var(--color-light-grey);
+    border-radius: 10px;
+}
+
+form button{
+    padding: 15px;
+    background: var(--dark);
+    color: var(--color-light);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
 .contact {
     width: 100vw;
     height: auto;

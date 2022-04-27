@@ -44,7 +44,7 @@
             <a href="#team">Team</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
-           
+
         </nav>
 
         <div class="icons">
@@ -506,8 +506,10 @@
 
                 <div class="bio">
 
-                    <p align="justify">Kariuki is an energetic and curiosity driven officer who is always eager to learn and support the functions of the department.
-                        Conversant with monitoring, evaluation, and strategy planning, he habours lots of interest in mobile software.
+                    <p align="justify">Kariuki is an energetic and curiosity driven officer who is always eager to learn
+                        and support the functions of the department.
+                        Conversant with monitoring, evaluation, and strategy planning, he habours lots of interest in
+                        mobile software.
                     </p>
 
                 </div>
@@ -627,9 +629,21 @@
 
     <section class="contact" id="contact">
 
-        <h3 class="sub-heading">Get in touch with us</h3>
+        <div class="contact-container">
+            <form onsubmit="sendMail(); reset();">
+                <h3 class="sub-heading">Send us a message</h3>
 
-        <div class="contact-us">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="organisation" placeholder="Organisation" required>
+                <input type="email" id="name" placeholder="Email address" required>
+                <textarea id="message" rows="3" placeholder="How can we be of help?"></textarea>
+                <button type="submit">Send</button>
+
+            </form>
+
+        </div>
+
+        <!-- <div class="contact-us">
 
             <div class="contact-details">
 
@@ -672,7 +686,7 @@
                 <p>Kenya School of Government,<br> Administration Block,<br>Second Floor, Wing B,<br> Room 209.</p>
 
             </div>
-        </div>
+        </div> -->
 
     </section>
 
@@ -722,12 +736,27 @@
     </section>
 
     <!--Footer Section Ends Here-->
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     <script src="js/lineChart.js"></script>
     <script src="js/doughnut.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        function sendMail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "qinkuntaone@gmail.com",
+                Password: "Kwjimmy123A",
+                To: 'kwjames9326@gmail.com',
+                From: "talents@kgb.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 
 </body>
 
