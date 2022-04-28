@@ -639,7 +639,23 @@
                 <textarea id="message" rows="3" placeholder="How can we be of help?"></textarea>
                 <button type="submit">Send</button>
 
+                <div class="social-media">
+
+                    <a href="https://www.facebook.com/KenyaSchoolofGovernment" class="fa-brands fa-facebook-f"></a>
+                    <a href="https://twitter.com/ksgkenya" class="fa-brands fa-twitter"> </a>
+                    <a href="https://ke.linkedin.com/company/kenya-school-of-government" class="fa-brands fa-linkedin-in"></a>
+                    <a href="https://www.youtube.com/channel/UCqB2r0hoqKpmV9CsmUmNR0w" class="fa-brands fa-youtube"></a>
+
+                    <!-- <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-youtube"></i> -->
+    
+                </div>
+
             </form>
+
+            
 
         </div>
 
@@ -701,6 +717,8 @@
             <div class="school">
                 <h1>Kenya School of Government</h1>
                 <p>Copyright &copy; 2022</p>
+
+                <li><a href="https://play.google.com/store/apps/developer?id=Kenya+School+of+Government">Download KSG Connect Mobile App</a></li>
             </div>
             <div class="get-in-touch">
                 <nav>
@@ -719,13 +737,13 @@
                 <nav>
                     <h1>Links</h1>
                     <ul>
-                        <li><a href="#">Ministry of Public Service, Gender, Senior Citizen Affairs and Special
+                        <li><a href="http://www.psyg.go.ke/">Ministry of Public Service, Gender, Senior Citizen Affairs and Special
                                 Programs</a>
                         </li>
-                        <li><a href="#">Public Service Commission</a></li>
-                        <li><a href="#">Treasury</a></li>
-                        <li><a href="#">Huduma </a></li>
-                        <li><a href="#">Kenya School of Government</a></li>
+                        <li><a href="https://www.publicservice.go.ke/">Public Service Commission</a></li>
+                        <li><a href="https://www.treasury.go.ke/">Treasury</a></li>
+                        <li><a href="https://www.hudumakenya.go.ke/">Huduma </a></li>
+                        <li><a href="https://www.ksg.ac.ke/">Kenya School of Government</a></li>
                     </ul>
                 </nav>
 
@@ -744,17 +762,7 @@
     <script src="js/script.js"></script>
     <script>
         function sendMail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "qinkuntaone@gmail.com",
-                Password: "Kwjimmy123A",
-                To: 'kwjames9326@gmail.com',
-                From: "kariuki.james@ksg.ac.ke",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
+            window.open('mailto:test@example.com?subject=subject&body=body');
         }
     </script>
 
