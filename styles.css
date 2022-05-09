@@ -669,15 +669,20 @@ form .social-media a:hover{
 }
 
 .social-media {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 2.2rem;
+    display: flex;
+    flex-direction: row;
     margin-top: 25px;
 }
 
-.social-media i {
+.social-media a {
+    margin-right: 40px;
+    font-size: 2.2rem !important;
+}
+
+.social-media a:hover {
     color: var(--dark);
 }
+
 
 .contact-location {
 
