@@ -606,12 +606,9 @@ header .icons #menubar {
 .documents .documents-main {
     width: 100%;
     margin: auto;
-    background: var(--dark);
-    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
     justify-items: center;
-
 }
 
 .documents-main .documents-data {
@@ -619,26 +616,8 @@ header .icons #menubar {
     grid-template-columns: 1fr 1fr;
     padding: 30px;
 }
-
-.qms-docs h3 {
-    color: var(--color-light-grey);
-    padding: 5px;
-    font-size: 1.8rem;
-}
-
-.qms-docs ul {
-    list-style: none;
-    padding: 5px;
-}
-
-.qms-docs ul li {
-    margin-top: 10px;
-}
-
-.qms-docs ul li a {
-    font-size: 1.5rem;
-    color: var(--white);
-    margin-top: 50px;
+.other-docs{
+    background: var(--dark);
 }
 
 .other-docs h3 {
