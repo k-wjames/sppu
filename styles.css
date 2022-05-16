@@ -200,7 +200,7 @@ header .icons #menubar {
 /* Landing Section starts here */
 
 .landing{
-    background: var(--dark);
+    
 }
 
  .landing .showcase-area{
@@ -218,25 +218,9 @@ header .icons #menubar {
 
 .text{
     font-size: 2.5rem;
-    color: var(--color-light-grey);
-}
-.cta .button{
-    display: inline-block;
-    color: var(--white);
-    padding: 0.9rem 0.9rem;
-    background-color: var(--primary);
-    border-radius: 10px;
-    font-size: 1.5rem;
-    transition: 0.4s;
+    color: var(--dark);
 }
 
-.cta .button:hover{
-    color: var(--primary);
-    font-size: 1.5rem;
-    background-color: var(--white);
-    transform: scale(1.05);
-    letter-spacing: 0.2rem;
-}
     
 
 .showcase-area .right .feature{
@@ -299,37 +283,9 @@ header .icons #menubar {
     overflow: hidden;
 }
 
-.department-content {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
-}
-
-.objective {
-    display: grid;
-    background: var(--color-light-grey);
+.what-we-do-banner img{
     padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
-}
-
-.objective .objective-icon {
-    background: var(--primary);
-    margin: 5px;
-    border-radius: 10px;
-}
-
-.objective-data h4 {
-
-    color: var(--primary);
-    font-size: 1.2rem;
-}
-
-.objective-data p {
-    font-size: 1.4rem;
+    object-fit: fill;
 }
 
 /* Team starts here */
@@ -604,9 +560,9 @@ header .icons #menubar {
 
 /* Documents start here */
 .documents .documents-main {
-    width: 100%;
+    width: 80%;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
     justify-items: center;
 }
@@ -614,10 +570,17 @@ header .icons #menubar {
 .documents-main .documents-data {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 30px;
+    margin-top: 20px;
+}
+
+.documents-main .documents-data .department-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 .other-docs{
     background: var(--dark);
+    padding: 30px;
 }
 
 .other-docs h3 {
