@@ -388,7 +388,7 @@ header .icons #menubar {
 .cardi-name {
     color: #888;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .icon-box i {
@@ -405,6 +405,15 @@ header .icons #menubar {
     padding-top: 0;
 }
 
+.myLineCharts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
 .chart {
     background: var(--color-light);
     padding: 20px;
@@ -412,6 +421,15 @@ header .icons #menubar {
     box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .08);
     width: 100%;
 }
+.lineChart {
+    background: var(--color-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .08);
+    width: 100%;
+}
+
+
 
 /* PC starts here */
 
@@ -506,20 +524,6 @@ header .icons #menubar {
     font-size: 3.5rem;
     transform: rotate(45deg);
     cursor: pointer;
-}
-
-.statistics {
-    background: var(--primary);
-    padding: 40px;
-}
-
-.statistics .sub-heading {
-    color: var(--color-light-grey);
-}
-
-.statistics .stats .content h1 {
-    align-items: center;
-    justify-items: center;
 }
 
 .container {
