@@ -6,7 +6,7 @@ new Chart("agpoLineChart", {
   data: {
     labels: xValues,
     datasets: [{
-        label:'Amount in Kshs',
+        label:'Amount in Kshs.',
       backgroundColor: 'rgb(41,182,246)',
       borderColor: 'rgb(41,182,246)',
       borderWidth: 1,

@@ -7,6 +7,7 @@ new Chart("bkbkLineChart", {
     data: {
         labels: xValues,
         datasets: [{
+           label:'Amount in Kshs.',
             backgroundColor: barColors,
             data: yValues
         }]
