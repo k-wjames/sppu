@@ -734,10 +734,18 @@ header .icons #menubar {
     
     }
 
+    .principles .data p{
+        font-size: 2rem !important;
+    }
+
     .department-members{
 
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .member .bio {
+        font-size: 2rem;
     }
 
     .documents-main .documents-data {
@@ -746,10 +754,21 @@ header .icons #menubar {
         margin-top: 20px;
     }
 
+    .other-docs ul li a {
+        font-size: 2rem;
+    }
+
     .gallery-main .gallery-data {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .gallery-item li a {
+
+        color: var(--white);
+        font-size: 2rem;
+    }
+    
 
     .footer .main-footer {
         display: grid;
