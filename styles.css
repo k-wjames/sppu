@@ -459,7 +459,6 @@ header .icons #menubar {
 }
 
 .performance .data p {
-
     font-size: 1.5rem;
 
 }
@@ -531,27 +530,6 @@ header .icons #menubar {
     margin: 0 auto;
     overflow: auto;
     padding: 0 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-5 {
-    grid-template-columns: repeat(5, 1fr);
 }
 
 .flex {
@@ -638,6 +616,162 @@ header .icons #menubar {
 
 /* media querries*/
 
+@media(max-width:460px) {
+    html {
+        font-size: 45%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .landing .showcase-area{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 30px;
+    }
+
+    .landing .showcase-area .left .intro-title{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .landing .showcase-area .left .intro-title h1{
+        font-size: 2.8rem;
+    }
+
+    .landing .showcase-area .left .intro-title .text{
+        font-size: 2.5rem;
+    }
+
+   .landing .showcase-area .right .feature{
+        width: 70%;
+        padding: 0;
+        justify-self: center;
+        transform: translate(10%, 5px);
+    }
+
+    .department-main {
+        display:flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .department-content{
+        margin-left: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .department-content p{
+        margin-top: 10px;
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 2rem;
+    }
+
+    .mycards {
+        width: 100%;
+        padding: 35px 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .number {
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--primary);
+    }
+
+    .cardi-name {
+        color: #888;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .icon-box i {
+        font-size: 1.5rem;
+        color: var(--primary);
+    }
+    
+    .mycharts {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .mycharts {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+    
+    .myLineCharts {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+    
+    .principles {
+
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+
+    .department-members{
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .documents-main .documents-data {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+
+    .gallery-main .gallery-data {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer .main-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer a {
+        font-size: 2.2rem !important;
+    }
+
+    .footer h1 {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+    
+    .footer p {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+
+}
+
 @media(max-width:991px) {
     html {
         font-size: 45%;
@@ -652,14 +786,6 @@ header .icons #menubar {
     }
 
 
-    .about .about-slider .slide .image img {
-
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        padding: 5px;
-    }
 }
 
 @media(max-width:768px) {
