@@ -38,11 +38,11 @@ html {
     font-family: 'Nunito', sans-serif;
 }
 
-img{
+img {
     width: 100%;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -98,7 +98,7 @@ header {
 }
 
 
-header .logo .my-logo{
+header .logo .my-logo {
     width: 80px;
 }
 
@@ -199,11 +199,11 @@ header .icons #menubar {
 
 /* Landing Section starts here */
 
-.landing{
+.landing {
     background: var(--dark);
 }
 
- .landing .showcase-area{
+.landing .showcase-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -211,26 +211,26 @@ header .icons #menubar {
     padding: 2rem 9%;
 }
 
- .intro-title h1{
+.intro-title h1 {
     font-size: 3.5rem;
     color: var(--primary);
 }
 
-.text{
+.text {
     font-size: 2.5rem;
     color: var(--color-light-grey);
 }
 
-    
 
-.showcase-area .right .feature{
+
+.showcase-area .right .feature {
     width: 80%;
     transform: translate(30%, 20px);
     padding: 70px;
 
 }
 
-.showcase-area .right .feature img{
+.showcase-area .right .feature img {
     width: 350px;
 
 }
@@ -282,24 +282,24 @@ header .icons #menubar {
     overflow: hidden;
 }
 
-.what-we-do-banner img{
+.what-we-do-banner img {
     padding: 10px;
     object-fit: fill;
 }
 
 /* Team starts here */
 
-.team{
+.team {
     background: var(--color-light-grey);
 }
 
-.department-members{
+.department-members {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.member{
+.member {
 
     padding: 10px;
     border-radius: 10px;
@@ -308,18 +308,18 @@ header .icons #menubar {
 
 }
 
-.member .user-name{
+.member .user-name {
     margin-top: 10px;
     font-size: 1.8rem;
 }
 
-.member .designation{
+.member .designation {
     margin-top: 5px;
     font-size: 1.5rem;
     color: var(--primary);
 }
 
-.member .bio{
+.member .bio {
     margin-top: 5px;
     font-size: 1.3rem;
 }
@@ -421,6 +421,7 @@ header .icons #menubar {
     box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .08);
     width: 100%;
 }
+
 .lineChart {
     background: var(--color-light);
     padding: 20px;
@@ -501,6 +502,7 @@ header .icons #menubar {
     font-size: 1.5rem;
 
 }
+
 .social-media {
     display: flex;
     flex-direction: row;
@@ -515,6 +517,7 @@ header .icons #menubar {
 .social-media a:hover {
     color: var(--dark);
 }
+
 /* Styling the close div*/
 .close {
     position: absolute;
@@ -559,7 +562,8 @@ header .icons #menubar {
     height: 100%;
     object-fit: fill;
 }
-.other-docs{
+
+.other-docs {
     background: var(--dark);
     padding: 30px;
 }
@@ -625,7 +629,7 @@ header .icons #menubar {
         padding: 1rem 2rem;
     }
 
-    .landing .showcase-area{
+    .landing .showcase-area {
 
         display: flex;
         flex-direction: column;
@@ -634,20 +638,20 @@ header .icons #menubar {
         padding-top: 30px;
     }
 
-    .landing .showcase-area .left .intro-title{
+    .landing .showcase-area .left .intro-title {
         width: 100%;
         padding-top: 50px;
     }
 
-    .landing .showcase-area .left .intro-title h1{
+    .landing .showcase-area .left .intro-title h1 {
         font-size: 2.8rem;
     }
 
-    .landing .showcase-area .left .intro-title .text{
+    .landing .showcase-area .left .intro-title .text {
         font-size: 2.5rem;
     }
 
-   .landing .showcase-area .right .feature{
+    .landing .showcase-area .right .feature {
         width: 70%;
         padding: 0;
         justify-self: center;
@@ -655,20 +659,20 @@ header .icons #menubar {
     }
 
     .department-main {
-        display:flex;
+        display: flex;
         flex-direction: column;
         padding: 30px;
         justify-items: center;
         align-items: center;
     }
 
-    .department-content{
+    .department-content {
         margin-left: 0;
         width: 100% !important;
         max-width: 100% !important;
     }
 
-    .department-content p{
+    .department-content p {
         margin-top: 10px;
         width: 100% !important;
         max-width: 100% !important;
@@ -694,15 +698,15 @@ header .icons #menubar {
         font-weight: 600;
         font-size: 1rem;
     }
-    
+
     .icon-box i {
         font-size: 1.5rem;
         color: var(--primary);
     }
-    
+
     .mycharts {
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
         width: 100%;
         padding: 20px;
@@ -711,34 +715,34 @@ header .icons #menubar {
 
     .mycharts {
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
         width: 100%;
         padding: 20px;
         padding-top: 0;
     }
-    
+
     .myLineCharts {
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
         width: 100%;
         padding: 20px;
         padding-top: 0;
     }
-    
+
     .principles {
 
         display: grid;
         grid-template-columns: 1fr;
-    
+
     }
 
-    .principles .data p{
+    .principles .data p {
         font-size: 2rem !important;
     }
 
-    .department-members{
+    .department-members {
 
         display: grid;
         grid-template-columns: 1fr;
@@ -768,7 +772,7 @@ header .icons #menubar {
         color: var(--white);
         font-size: 2rem;
     }
-    
+
 
     .footer .main-footer {
         display: grid;
@@ -783,7 +787,7 @@ header .icons #menubar {
         font-size: 2.2rem !important;
         text-transform: none;
     }
-    
+
     .footer p {
         font-size: 2.2rem !important;
         text-transform: none;
@@ -791,23 +795,21 @@ header .icons #menubar {
 
 }
 
-@media(max-width:991px) {
+
+@media(max-width:768px) {
+
     html {
-        font-size: 45%;
+        font-size: 40%;
     }
 
     header {
         padding: 1rem 2rem;
     }
 
-    header .logo {
-        font-size: 1.5rem;
+    section {
+        padding: 2rem;
     }
 
-
-}
-
-@media(max-width:768px) {
     header .icons #menubar {
         display: inline-block;
     }
@@ -847,9 +849,187 @@ header .icons #menubar {
         height: fit-content;
     }
 
+    .landing .showcase-area {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding: 30px;
+    }
+
+    .landing .showcase-area .left .intro-title {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .landing .showcase-area .left .intro-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .landing .showcase-area .left .intro-title .text {
+        font-size: 2.5rem;
+    }
+
+    .landing .showcase-area .right .feature {
+        width: 60%;
+        padding: 0;
+        justify-self: center;
+        transform: translate(30%, 10px);
+        padding: 40px;
+    }
+
+
+    .our-department{
+        width: 100vw !important;
+        max-width: 100vw !important;
+    }
+
+    .our-department .department-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-banner {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .department-banner img {
+        width: 100%;
+        height: 50% !important;
+        object-fit: fill;
+        margin-bottom: -90px;
+    }
+
+    .department-content {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .department-content p {
+        font-size: 2rem;
+        margin-top: 0 !important;
+    }
+
+    .mycards {
+        width: 100%;
+        padding: 35px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .number {
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--primary);
+    }
+
+    .cardi-name {
+        color: #888;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .icon-box i {
+        font-size: 1.5rem;
+        color: var(--primary);
+    }
+
+    .mycharts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .mycharts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .myLineCharts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .principles {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .principles .data p {
+        font-size: 2rem !important;
+    }
+
+    .department-members {
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .member .bio {
+        font-size: 2rem;
+    }
+
+    .documents-main .documents-data {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+
+    .other-docs ul li a {
+        font-size: 2rem;
+    }
+
+    .gallery-main .gallery-data {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item li a {
+
+        color: var(--white);
+        font-size: 2rem;
+    }
+
+
+    .footer .main-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer a {
+        font-size: 2.2rem !important;
+    }
+
+    .footer h1 {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+
+    .footer p {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+
 }
 
-@media(max-width:991px) {
+/* @media(max-width:991px) {
     html {
         font-size: 40%;
     }
@@ -861,4 +1041,4 @@ header .icons #menubar {
     section {
         padding: 2rem;
     }
-}
+} */
