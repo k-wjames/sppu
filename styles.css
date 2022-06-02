@@ -50,9 +50,6 @@ section {
     padding: 2rem 9%;
 }
 
-/*section:nth-child(even){
-    background: var(--icons-bg);
-}.*/
 .sub-heading {
     text-align: center;
     color: var(--primary);
@@ -221,8 +218,6 @@ header .icons #menubar {
     color: var(--color-light-grey);
 }
 
-
-
 .showcase-area .right .feature {
     width: 80%;
     transform: translate(30%, 20px);
@@ -232,13 +227,11 @@ header .icons #menubar {
 
 .showcase-area .right .feature img {
     width: 350px;
-
 }
-
 
 /* Our Department Starts here*/
 
-.our-department {
+.department {
     background: var(--color-light-grey);
 }
 
@@ -543,32 +536,17 @@ header .icons #menubar {
 }
 
 /* Documents start here */
-.documents .documents-main {
-    width: 80%;
-    margin: auto;
-    border-radius: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
-    justify-items: center;
-}
-
-.documents-main .documents-data {
+.docs .docs-main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 30px;
 }
-
-.documents-main .documents-data .department-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.other-docs {
+.docs-data {
     background: var(--dark);
     padding: 30px;
 }
 
-.other-docs h3 {
+.docs-data h3 {
 
     color: var(--color-light-grey);
     padding: 5px;
@@ -576,17 +554,17 @@ header .icons #menubar {
 
 }
 
-.other-docs ul {
+.docs-data ul {
     list-style: none;
     padding: 5px;
 }
 
-.other-docs ul li {
+.docs-data ul li {
     margin-top: 10px;
 }
 
 
-.other-docs ul li a {
+.docs-data ul li a {
     font-size: 1.5rem;
     color: var(--white);
 }
@@ -620,7 +598,7 @@ header .icons #menubar {
 
 /* media querries*/
 
-@media(max-width:460px) {
+@media(max-width:400px) {
     html {
         font-size: 45%;
     }
@@ -629,7 +607,7 @@ header .icons #menubar {
         padding: 1rem 2rem;
     }
 
-    .landing .showcase-area {
+    .landing .container .showcase-area {
 
         display: flex;
         flex-direction: column;
@@ -640,7 +618,7 @@ header .icons #menubar {
 
     .landing .showcase-area .left .intro-title {
         width: 100%;
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     .landing .showcase-area .left .intro-title h1 {
@@ -651,56 +629,63 @@ header .icons #menubar {
         font-size: 2.5rem;
     }
 
-    .landing .showcase-area .right .feature {
-        width: 70%;
+    .landing .container .showcase-area .right .feature {
+        width: 50%;
         padding: 0;
         justify-self: center;
-        transform: translate(10%, 5px);
     }
 
-    .department-main {
-        display: flex;
-        flex-direction: column;
+
+    .department .department-main {
+        display: grid;
+        grid-template-columns: 1fr;
         padding: 30px;
-        justify-items: center;
+        align-items: center;
+        justify-content: center;
         align-items: center;
     }
 
-    .department-content {
-        margin-left: 0;
-        width: 100% !important;
-        max-width: 100% !important;
+    .department .department-main{
+        padding-top: 10px;
     }
 
-    .department-content p {
-        margin-top: 10px;
-        width: 100% !important;
-        max-width: 100% !important;
-        font-size: 2rem;
+    .department .department-main img{
+        height: 75% !important;
     }
 
-    .mycards {
-        width: 100%;
+    .department .department-main .department-content p{
+        width: 100% !important;
+        margin-right: 0dp !important;
+    }
+
+
+   .stats .main .mycards {
+        width: 100% ;
         padding: 35px 20px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:1fr;
         grid-gap: 20px;
     }
 
-    .number {
+    .stats .main .mycards .cardi{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .stats .main .mycards .cardi .cardi-content .number {
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: 400;
         color: var(--primary);
     }
 
-    .cardi-name {
+    .stats .main .mycards .cardi .cardi-content .cardi-name {
         color: #888;
-        font-weight: 600;
-        font-size: 1rem;
+        font-weight: 400;
+        font-size: 2rem;
     }
 
-    .icon-box i {
-        font-size: 1.5rem;
+    .stats .main .mycards .cardi .icon-box i {
+        font-size: 3rem;
         color: var(--primary);
     }
 
@@ -752,17 +737,20 @@ header .icons #menubar {
         font-size: 2rem;
     }
 
-    .documents-main .documents-data {
+  
+    .docs .docs-main{
         display: grid;
         grid-template-columns: 1fr;
-        margin-top: 20px;
+        margin-top: 0px;
+        padding-top: 10px;
+        margin: 10px;
     }
 
-    .other-docs ul li a {
+    .docs .docs-main .docs-data ul li a{
         font-size: 2rem;
     }
 
-    .gallery-main .gallery-data {
+    .gallery .gallery-main .gallery-data {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -774,9 +762,18 @@ header .icons #menubar {
     }
 
 
+
     .footer .main-footer {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .footer .main-footer .get-in-touch{
+        margin-top: 30px;
+    }
+
+    .footer .main-footer .other-links{
+        margin-top: 30px;
     }
 
     .footer a {
@@ -794,251 +791,3 @@ header .icons #menubar {
     }
 
 }
-
-
-@media(max-width:768px) {
-
-    html {
-        font-size: 40%;
-    }
-
-    header {
-        padding: 1rem 2rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-
-    header .icons #menubar {
-        display: inline-block;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        padding: 1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    header .navbar a {
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: var(--icons-bg);
-    }
-
-
-    .introduction {
-        width: 100%;
-        height: auto;
-    }
-
-    .hero-image {
-        width: fit-content;
-        height: fit-content;
-    }
-
-    .landing .showcase-area {
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-items: center;
-        padding: 30px;
-    }
-
-    .landing .showcase-area .left .intro-title {
-        width: 100%;
-        padding-top: 50px;
-    }
-
-    .landing .showcase-area .left .intro-title h1 {
-        font-size: 2.8rem;
-    }
-
-    .landing .showcase-area .left .intro-title .text {
-        font-size: 2.5rem;
-    }
-
-    .landing .showcase-area .right .feature {
-        width: 60%;
-        padding: 0;
-        justify-self: center;
-        transform: translate(30%, 10px);
-        padding: 40px;
-    }
-
-
-    .our-department{
-        width: 100vw !important;
-        max-width: 100vw !important;
-    }
-
-    .our-department .department-main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .department-banner {
-        width: 100%;
-        height: 70vh;
-    }
-
-    .department-banner img {
-        width: 100%;
-        height: 50% !important;
-        object-fit: fill;
-        margin-bottom: -90px;
-    }
-
-    .department-content {
-        width: 100% !important;
-        margin: 0 !important;
-    }
-
-    .department-content p {
-        font-size: 2rem;
-        margin-top: 0 !important;
-    }
-
-    .mycards {
-        width: 100%;
-        padding: 35px 20px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
-
-    .number {
-        font-size: 2rem;
-        font-weight: 300;
-        color: var(--primary);
-    }
-
-    .cardi-name {
-        color: #888;
-        font-weight: 600;
-        font-size: 1rem;
-    }
-
-    .icon-box i {
-        font-size: 1.5rem;
-        color: var(--primary);
-    }
-
-    .mycharts {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        width: 100%;
-        padding: 20px;
-        padding-top: 0;
-    }
-
-    .mycharts {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        width: 100%;
-        padding: 20px;
-        padding-top: 0;
-    }
-
-    .myLineCharts {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        width: 100%;
-        padding: 20px;
-        padding-top: 0;
-    }
-
-    .principles {
-
-        display: grid;
-        grid-template-columns: 1fr;
-
-    }
-
-    .principles .data p {
-        font-size: 2rem !important;
-    }
-
-    .department-members {
-
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .member .bio {
-        font-size: 2rem;
-    }
-
-    .documents-main .documents-data {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-    }
-
-    .other-docs ul li a {
-        font-size: 2rem;
-    }
-
-    .gallery-main .gallery-data {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-item li a {
-
-        color: var(--white);
-        font-size: 2rem;
-    }
-
-
-    .footer .main-footer {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .footer a {
-        font-size: 2.2rem !important;
-    }
-
-    .footer h1 {
-        font-size: 2.2rem !important;
-        text-transform: none;
-    }
-
-    .footer p {
-        font-size: 2.2rem !important;
-        text-transform: none;
-    }
-
-}
-
-/* @media(max-width:991px) {
-    html {
-        font-size: 40%;
-    }
-
-    header {
-        padding: 1rem 2rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-} */
