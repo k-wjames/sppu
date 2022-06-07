@@ -235,11 +235,18 @@ header .icons #menubar {
     background: var(--color-light-grey);
 }
 
-.department-main {
+/* .department-main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 30px;
+} */
+
+.department-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
 }
+
 
 .department-main .department-banner img {
     width: 100%;
@@ -571,7 +578,7 @@ header .icons #menubar {
 
 .footer {
     width: 100%;
-    background: var(--primary);
+    background: var(--dark);
     color: var(--color-light);
 }
 
@@ -790,7 +797,7 @@ header .icons #menubar {
     }
 
 }
-@media (min-width: 561px) and (max-width:900px) {
+@media (min-width: 561px) and (max-width:768px) {
     html {
         font-size: 45%;
     }
@@ -966,6 +973,381 @@ header .icons #menubar {
 
     .footer .main-footer .other-links{
         margin-top: 30px;
+    }
+
+    .footer a {
+        font-size: 2.2rem !important;
+    }
+
+    .footer h1 {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+
+    .footer p {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width:900px) {
+    html {
+        font-size: 45%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    /* .landing .container .showcase-area {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 30px;
+    }
+
+    .landing .showcase-area .left .intro-title {
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .landing .showcase-area .left .intro-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .landing .showcase-area .left .intro-title .text {
+        font-size: 2.5rem;
+    }
+
+    .landing .container .showcase-area .right .feature {
+        width: 50%;
+        padding: 0;
+        justify-self: center;
+    } */
+
+
+    .department .department-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .department .department-main{
+        padding-top: 10px;
+    }
+
+    .department .department-main img{
+        height: 75% !important;
+    }
+
+    .department .department-main .department-content p{
+        width: 100% !important;
+        margin-right: 0dp !important;
+    }
+
+
+   .stats .main .mycards {
+        width: 100% ;
+        padding: 35px 20px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .stats .main .mycards .cardi{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .stats .main .mycards .cardi .cardi-content .number {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--primary);
+    }
+
+    .stats .main .mycards .cardi .cardi-content .cardi-name {
+        color: #888;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .stats .main .mycards .cardi .icon-box i {
+        font-size: 3rem;
+        color: var(--primary);
+    }
+
+    .mycharts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .mycharts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .myLineCharts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .principles {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .principles .data p {
+        font-size: 2rem !important;
+    }
+
+    .department-members {
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .member .bio {
+        font-size: 2rem;
+    }
+
+  
+    .docs .docs-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+        padding-top: 10px;
+        margin: 10px;
+    }
+
+    .docs .docs-main .docs-data ul li a{
+        font-size: 2rem;
+    }
+
+    .gallery .gallery-main .gallery-data {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item li a {
+
+        color: var(--white);
+        font-size: 2rem;
+    }
+
+
+
+    .footer .main-footer {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
+    .footer .main-footer .get-in-touch{
+        margin-top: 30px;
+    }
+
+    .footer .main-footer .other-links{
+        margin-top: 30px;
+    }
+
+    .footer a {
+        font-size: 2.2rem !important;
+    }
+
+    .footer h1 {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+
+    .footer p {
+        font-size: 2.2rem !important;
+        text-transform: none;
+    }
+
+}
+
+@media (min-width: 901px) and (max-width:1100px) {
+    html {
+        font-size: 45%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    /* .landing .container .showcase-area {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 30px;
+    }
+
+    .landing .showcase-area .left .intro-title {
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .landing .showcase-area .left .intro-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .landing .showcase-area .left .intro-title .text {
+        font-size: 2.5rem;
+    }
+
+    .landing .container .showcase-area .right .feature {
+        width: 50%;
+        padding: 0;
+        justify-self: center;
+    } */
+
+
+    .department .department-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .department .department-main{
+        padding-top: 10px;
+    }
+
+    .department .department-main img{
+        height: 75% !important;
+    }
+
+    .department .department-main .department-content p{
+        width: 100% !important;
+        margin-right: 0dp !important;
+    }
+
+
+   .stats .main .mycards {
+        width: 100% ;
+        padding: 35px 20px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .stats .main .mycards .cardi{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .stats .main .mycards .cardi .cardi-content .number {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--primary);
+    }
+
+    .stats .main .mycards .cardi .cardi-content .cardi-name {
+        color: #888;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .stats .main .mycards .cardi .icon-box i {
+        font-size: 3rem;
+        color: var(--primary);
+    }
+
+    .mycharts {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+
+    .myLineCharts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .principles {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .principles .data p {
+        font-size: 2rem !important;
+    }
+
+    .department-members {
+
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .member .bio {
+        font-size: 2rem;
+    }
+
+  
+    /* .docs .docs-main{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 0px;
+        padding-top: 10px;
+        margin: 10px;
+    }
+    .docs .docs-main img{
+        width: 100%!;
+    }
+
+    .docs .docs-main .docs-data ul li a{
+        font-size: 2rem;
+    }
+
+    .gallery .gallery-main .gallery-data {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item li a {
+
+        color: var(--white);
+        font-size: 2rem;
+    } */
+
+
+
+    .footer .main-footer {
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
     }
 
     .footer a {
