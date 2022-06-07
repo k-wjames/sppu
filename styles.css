@@ -112,7 +112,7 @@ header .navbar a {
 header .navbar a.active,
 header .navbar a:hover {
     color: var(--white);
-    background: var(--primary);
+    background: var(--accent);
 }
 
 header.icons {
@@ -135,7 +135,7 @@ header .icons a {
 header .icons i:hover,
 header .icons a:hover {
     color: var(--white);
-    background: var(--primary);
+    background: var(--accent);
     transform: rotate(360deg);
 
 }
@@ -311,7 +311,7 @@ header .icons #menubar {
 .member .designation {
     margin-top: 5px;
     font-size: 1.5rem;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .member .bio {
@@ -377,7 +377,7 @@ header .icons #menubar {
 .number {
     font-size: 2rem;
     font-weight: 500;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .cardi-name {
@@ -388,7 +388,7 @@ header .icons #menubar {
 
 .icon-box i {
     font-size: 2.2rem;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .mycharts {
