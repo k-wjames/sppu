@@ -12,11 +12,10 @@
 
     --grey-color: #333;
     --color-light: #fff;
-    --color-dark: #1d2026;
+    --color-dark: #000;
     --color-light-grey: #f4f4f4;
 
 }
-
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -602,6 +601,10 @@ header .icons #menubar {
 .footer p {
     font-size: 1.5rem;
     text-transform: none;
+}
+
+.footer .school li a:hover{
+    color: var(--accent);
 }
 
 .footer .other-links li a:hover{
