@@ -790,7 +790,7 @@ header .icons #menubar {
     }
 
 }
-@media(max-width:900px) {
+@media (min-width: 561px) and (max-width:900px) {
     html {
         font-size: 45%;
     }
