@@ -2,6 +2,7 @@
 
 :root {
     --primary: #27ae60;
+    --accent: #CBD300;
     --dark: #192a56;
     --light: #666;
     --white: #fff;
@@ -52,7 +53,7 @@ section {
 
 .sub-heading {
     text-align: center;
-    color: var(--primary);
+    color: var(--accent);
     font-size: 2rem;
     padding-top: 5rem;
 }
@@ -210,7 +211,7 @@ header .icons #menubar {
 
 .intro-title h1 {
     font-size: 3.5rem;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .text {
@@ -234,12 +235,6 @@ header .icons #menubar {
 .department {
     background: var(--color-light-grey);
 }
-
-/* .department-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 30px;
-} */
 
 .department-main {
     display: grid;
@@ -492,7 +487,7 @@ header .icons #menubar {
 }
 
 .principles .data:hover {
-    background: var(--primary);
+    background: var(--accent);
     color: var(--color-light);
 }
 
@@ -515,7 +510,7 @@ header .icons #menubar {
 }
 
 .social-media a:hover {
-    color: var(--dark);
+    color: var(--accent);
 }
 
 /* Styling the close div*/
@@ -572,9 +567,15 @@ header .icons #menubar {
 
 
 .docs-data ul li a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--white);
 }
+
+.docs-data ul li a:hover {
+    color: var(--accent);
+    
+}
+
 
 .footer {
     width: 100%;
@@ -589,7 +590,7 @@ header .icons #menubar {
 
 .footer a {
     color: var(--color-light);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 
 }
 
@@ -601,6 +602,10 @@ header .icons #menubar {
 .footer p {
     font-size: 1.5rem;
     text-transform: none;
+}
+
+.footer .other-links li a:hover{
+    color: var(--accent);
 }
 
 /* media querries*/
@@ -1000,33 +1005,6 @@ header .icons #menubar {
         padding: 1rem 2rem;
     }
 
-    /* .landing .container .showcase-area {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        padding-top: 30px;
-    }
-
-    .landing .showcase-area .left .intro-title {
-        width: 100%;
-        padding-top: 70px;
-    }
-
-    .landing .showcase-area .left .intro-title h1 {
-        font-size: 2.8rem;
-    }
-
-    .landing .showcase-area .left .intro-title .text {
-        font-size: 2.5rem;
-    }
-
-    .landing .container .showcase-area .right .feature {
-        width: 50%;
-        padding: 0;
-        justify-self: center;
-    } */
 
 
     .department .department-main {
@@ -1194,35 +1172,6 @@ header .icons #menubar {
         padding: 1rem 2rem;
     }
 
-    /* .landing .container .showcase-area {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        padding-top: 30px;
-    }
-
-    .landing .showcase-area .left .intro-title {
-        width: 100%;
-        padding-top: 70px;
-    }
-
-    .landing .showcase-area .left .intro-title h1 {
-        font-size: 2.8rem;
-    }
-
-    .landing .showcase-area .left .intro-title .text {
-        font-size: 2.5rem;
-    }
-
-    .landing .container .showcase-area .right .feature {
-        width: 50%;
-        padding: 0;
-        justify-self: center;
-    } */
-
-
     .department .department-main {
         display: grid;
         grid-template-columns: 1fr;
@@ -1315,35 +1264,6 @@ header .icons #menubar {
     .member .bio {
         font-size: 2rem;
     }
-
-  
-    /* .docs .docs-main{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        margin-top: 0px;
-        padding-top: 10px;
-        margin: 10px;
-    }
-    .docs .docs-main img{
-        width: 100%!;
-    }
-
-    .docs .docs-main .docs-data ul li a{
-        font-size: 2rem;
-    }
-
-    .gallery .gallery-main .gallery-data {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-item li a {
-
-        color: var(--white);
-        font-size: 2rem;
-    } */
-
-
 
     .footer .main-footer {
         display: grid;
