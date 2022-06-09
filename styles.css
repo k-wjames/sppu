@@ -341,6 +341,11 @@ header .icons #menubar {
     color: var(--white);
 }
 
+#gallery .gallery_content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* Stats start here */
 .stats {
     background: var(--color-light-grey);
@@ -774,6 +779,10 @@ header .icons #menubar {
         color: var(--white);
         font-size: 2rem;
     }
+    #gallery .gallery_content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 
 
@@ -955,6 +964,11 @@ header .icons #menubar {
 
     .docs .docs-main .docs-data ul li a{
         font-size: 2rem;
+    }
+
+    #gallery .gallery_content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .gallery .gallery-main .gallery-data {
