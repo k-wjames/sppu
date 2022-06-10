@@ -16,6 +16,7 @@
     --color-light-grey: #f4f4f4;
 
 }
+
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -341,7 +342,7 @@ header .icons #menubar {
     color: var(--white);
 }
 
-#gallery .gallery_content{
+#gallery .gallery_content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -541,15 +542,16 @@ header .icons #menubar {
 }
 
 /* Documents start here */
-.docs .docs-main{
+.docs .docs-main {
     display: grid;
     grid-template-columns: 2fr 3fr;
     margin-top: 30px;
 }
 
-.docs-main img{
+.docs-main img {
     height: 100%;
 }
+
 .docs-data {
     background: var(--dark);
     padding: 30px;
@@ -580,7 +582,7 @@ header .icons #menubar {
 
 .docs-data ul li a:hover {
     color: var(--accent);
-    
+
 }
 
 
@@ -611,11 +613,11 @@ header .icons #menubar {
     text-transform: none;
 }
 
-.footer .school li a:hover{
+.footer .school li a:hover {
     color: var(--accent);
 }
 
-.footer .other-links li a:hover{
+.footer .other-links li a:hover {
     color: var(--accent);
 }
 
@@ -667,29 +669,29 @@ header .icons #menubar {
         align-items: center;
     }
 
-    .department .department-main{
+    .department .department-main {
         padding-top: 10px;
     }
 
-    .department .department-main img{
+    .department .department-main img {
         height: 75% !important;
     }
 
-    .department .department-main .department-content p{
+    .department .department-main .department-content p {
         width: 100% !important;
         margin-right: 0dp !important;
     }
 
 
-   .stats .main .mycards {
-        width: 100% ;
+    .stats .main .mycards {
+        width: 100%;
         padding: 35px 20px;
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
     }
 
-    .stats .main .mycards .cardi{
+    .stats .main .mycards .cardi {
         width: 100%;
         padding: 10px;
     }
@@ -707,6 +709,10 @@ header .icons #menubar {
 
     .stats .main .mycards .cardi .icon-box i {
         font-size: 3rem;
+    }
+
+    #participantsLineChart{
+        max-height: 200px ;
     }
 
     .mycharts {
@@ -757,8 +763,8 @@ header .icons #menubar {
         font-size: 2rem;
     }
 
-  
-    .docs .docs-main{
+
+    .docs .docs-main {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 0px;
@@ -766,7 +772,7 @@ header .icons #menubar {
         margin: 10px;
     }
 
-    .docs .docs-main .docs-data ul li a{
+    .docs .docs-main .docs-data ul li a {
         font-size: 2rem;
     }
 
@@ -780,7 +786,8 @@ header .icons #menubar {
         color: var(--white);
         font-size: 2rem;
     }
-    #gallery .gallery_content{
+
+    #gallery .gallery_content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -792,11 +799,11 @@ header .icons #menubar {
         grid-template-columns: 1fr;
     }
 
-    .footer .main-footer .get-in-touch{
+    .footer .main-footer .get-in-touch {
         margin-top: 30px;
     }
 
-    .footer .main-footer .other-links{
+    .footer .main-footer .other-links {
         margin-top: 30px;
     }
 
@@ -815,6 +822,7 @@ header .icons #menubar {
     }
 
 }
+
 @media (min-width: 561px) and (max-width:768px) {
     html {
         font-size: 45%;
@@ -862,29 +870,29 @@ header .icons #menubar {
         align-items: center;
     }
 
-    .department .department-main{
+    .department .department-main {
         padding-top: 10px;
     }
 
-    .department .department-main img{
+    .department .department-main img {
         height: 75% !important;
     }
 
-    .department .department-main .department-content p{
+    .department .department-main .department-content p {
         width: 100% !important;
         margin-right: 0dp !important;
     }
 
 
-   .stats .main .mycards {
-        width: 100% ;
+    .stats .main .mycards {
+        width: 100%;
         padding: 35px 20px;
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
 
-    .stats .main .mycards .cardi{
+    .stats .main .mycards .cardi {
         width: 100%;
         padding: 10px;
     }
@@ -904,6 +912,10 @@ header .icons #menubar {
     .stats .main .mycards .cardi .icon-box i {
         font-size: 3rem;
         color: var(--accent);
+    }
+
+    #participantsLineChart{
+        max-height: 200px ;
     }
 
     .mycharts {
@@ -954,8 +966,8 @@ header .icons #menubar {
         font-size: 2rem;
     }
 
-  
-    .docs .docs-main{
+
+    .docs .docs-main {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 0px;
@@ -963,11 +975,11 @@ header .icons #menubar {
         margin: 10px;
     }
 
-    .docs .docs-main .docs-data ul li a{
+    .docs .docs-main .docs-data ul li a {
         font-size: 2rem;
     }
 
-    #gallery .gallery_content{
+    #gallery .gallery_content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -990,11 +1002,11 @@ header .icons #menubar {
         grid-template-columns: 1fr;
     }
 
-    .footer .main-footer .get-in-touch{
+    .footer .main-footer .get-in-touch {
         margin-top: 30px;
     }
 
-    .footer .main-footer .other-links{
+    .footer .main-footer .other-links {
         margin-top: 30px;
     }
 
@@ -1023,6 +1035,12 @@ header .icons #menubar {
         padding: 1rem 2rem;
     }
 
+    .landing .container .showcase-area {
+        padding-top:100px;
+        padding-bottom: 50px;
+       
+    }
+
 
 
     .department .department-main {
@@ -1034,29 +1052,34 @@ header .icons #menubar {
         align-items: center;
     }
 
-    .department .department-main{
+    .department .department-main {
         padding-top: 10px;
     }
 
-    .department .department-main img{
+    .department .department-main img {
         height: 75% !important;
     }
 
-    .department .department-main .department-content p{
+    .department .department-main .department-content p {
         width: 100% !important;
         margin-right: 0dp !important;
     }
 
+    .landing .container .showcase-area .right .feature {
+        width: 50%;
+        padding: 0;
+        justify-self: center;
+    }
 
-   .stats .main .mycards {
-        width: 100% ;
+    .stats .main .mycards {
+        width: 100%;
         padding: 35px 20px;
         display: grid;
-        grid-template-columns:1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
     }
 
-    .stats .main .mycards .cardi{
+    .stats .main .mycards .cardi {
         width: 100%;
         padding: 10px;
     }
@@ -1074,6 +1097,10 @@ header .icons #menubar {
 
     .stats .main .mycards .cardi .icon-box i {
         font-size: 3rem;
+    }
+
+    #participantsLineChart{
+        max-height: 200px ;
     }
 
     .mycharts {
@@ -1124,8 +1151,8 @@ header .icons #menubar {
         font-size: 2rem;
     }
 
-  
-    .docs .docs-main{
+
+    .docs .docs-main {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 0px;
@@ -1133,7 +1160,7 @@ header .icons #menubar {
         margin: 10px;
     }
 
-    .docs .docs-main .docs-data ul li a{
+    .docs .docs-main .docs-data ul li a {
         font-size: 2rem;
     }
 
@@ -1152,14 +1179,14 @@ header .icons #menubar {
 
     .footer .main-footer {
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
     }
 
-    .footer .main-footer .get-in-touch{
+    .footer .main-footer .get-in-touch {
         margin-top: 30px;
     }
 
-    .footer .main-footer .other-links{
+    .footer .main-footer .other-links {
         margin-top: 30px;
     }
 
@@ -1188,6 +1215,7 @@ header .icons #menubar {
         padding: 1rem 2rem;
     }
 
+
     .department .department-main {
         display: grid;
         grid-template-columns: 1fr;
@@ -1197,29 +1225,29 @@ header .icons #menubar {
         align-items: center;
     }
 
-    .department .department-main{
+    .department .department-main {
         padding-top: 10px;
     }
 
-    .department .department-main img{
+    .department .department-main img {
         height: 75% !important;
     }
 
-    .department .department-main .department-content p{
+    .department .department-main .department-content p {
         width: 100% !important;
         margin-right: 0dp !important;
     }
 
 
-   .stats .main .mycards {
-        width: 100% ;
+    .stats .main .mycards {
+        width: 100%;
         padding: 35px 20px;
         display: grid;
-        grid-template-columns:1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
     }
 
-    .stats .main .mycards .cardi{
+    .stats .main .mycards .cardi {
         width: 100%;
         padding: 10px;
     }
@@ -1239,9 +1267,12 @@ header .icons #menubar {
         font-size: 3rem;
     }
 
+    #participantsLineChart{
+        max-height: 200px ;
+    }
     .mycharts {
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         width: 100%;
         padding: 20px;
@@ -1272,7 +1303,7 @@ header .icons #menubar {
     .department-members {
 
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .member .bio {
@@ -1281,7 +1312,7 @@ header .icons #menubar {
 
     .footer .main-footer {
         display: grid;
-        grid-template-columns:repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .footer a {
@@ -1299,4 +1330,3 @@ header .icons #menubar {
     }
 
 }
-
