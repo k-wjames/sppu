@@ -697,7 +697,6 @@ header .icons #menubar {
     .stats .main .mycards .cardi .cardi-content .number {
         font-size: 2rem;
         font-weight: 400;
-        color: var(--primary);
     }
 
     .stats .main .mycards .cardi .cardi-content .cardi-name {
@@ -708,7 +707,6 @@ header .icons #menubar {
 
     .stats .main .mycards .cardi .icon-box i {
         font-size: 3rem;
-        color: var(--primary);
     }
 
     .mycharts {
@@ -832,7 +830,7 @@ header .icons #menubar {
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        padding-top: 30px;
+        padding-top: 100px;
     }
 
     .landing .showcase-area .left .intro-title {
@@ -894,7 +892,7 @@ header .icons #menubar {
     .stats .main .mycards .cardi .cardi-content .number {
         font-size: 2rem;
         font-weight: 400;
-        color: var(--primary);
+        color: var(--accent);
     }
 
     .stats .main .mycards .cardi .cardi-content .cardi-name {
@@ -905,7 +903,7 @@ header .icons #menubar {
 
     .stats .main .mycards .cardi .icon-box i {
         font-size: 3rem;
-        color: var(--primary);
+        color: var(--accent);
     }
 
     .mycharts {
@@ -1066,7 +1064,6 @@ header .icons #menubar {
     .stats .main .mycards .cardi .cardi-content .number {
         font-size: 2rem;
         font-weight: 400;
-        color: var(--primary);
     }
 
     .stats .main .mycards .cardi .cardi-content .cardi-name {
@@ -1077,7 +1074,6 @@ header .icons #menubar {
 
     .stats .main .mycards .cardi .icon-box i {
         font-size: 3rem;
-        color: var(--primary);
     }
 
     .mycharts {
@@ -1231,7 +1227,6 @@ header .icons #menubar {
     .stats .main .mycards .cardi .cardi-content .number {
         font-size: 2rem;
         font-weight: 400;
-        color: var(--primary);
     }
 
     .stats .main .mycards .cardi .cardi-content .cardi-name {
@@ -1242,7 +1237,6 @@ header .icons #menubar {
 
     .stats .main .mycards .cardi .icon-box i {
         font-size: 3rem;
-        color: var(--primary);
     }
 
     .mycharts {
