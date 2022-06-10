@@ -492,7 +492,6 @@ header .icons #menubar {
 
 .principles .data:hover {
     background: var(--accent);
-    color: var(--color-light);
 }
 
 
