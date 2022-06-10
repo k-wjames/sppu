@@ -38,7 +38,10 @@ header .navbar {
   
   .navbar-toggler {
     display: none;
+    background: white;
   }
+
+  
   #homePageBtn {
       display: block;
     background-color: var(--white);

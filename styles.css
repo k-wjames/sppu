@@ -546,6 +546,10 @@ header .icons #menubar {
     grid-template-columns: 2fr 3fr;
     margin-top: 30px;
 }
+
+.docs-main img{
+    height: 100%;
+}
 .docs-data {
     background: var(--dark);
     padding: 30px;
@@ -570,7 +574,7 @@ header .icons #menubar {
 
 
 .docs-data ul li a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--white);
 }
 
